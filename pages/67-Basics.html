@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .types {
+        text-transform: uppercase;
+        width: 120px;
+        background-color: #d9d9d9;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        text-align: center;
+        font-weight: bolder;
+        box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.2);
+      }
+      h1, h2, h3 {
+        margin: 0
+      }
+      .btn {
+        border: none;
+        background-color: #4521aa;
+        color: white;
+        width: 150px;
+        padding: 8px;
+      }
+      .btn.hovered:hover {
+        background-color: #856cdb;
+      }
+      .btn.active:active {
+        background-color: #cfc5f1;
+      }
+    </style>
+  </head>
+  <body style="display: flex; justify-content: center; padding-top: 10px;">
+    <div style="display: flex; flex-direction: column">
+      <div class="types">typography</div>
+      <div>
+        <p style="font-weight: bold">Make me bold</p>
+        <p style="font-style: italic">Make me italic</p>
+      </div>
+      <div>
+        <p style="font-family: 'Arial'">I'm from the Arial font family!</p>
+        <p style="font-family: 'Times New Roman', Times, serif">
+          And I'm from the Times New Roman font family!
+        </p>
+      </div>
+      <div>
+        <p style="text-decoration: underline">Make this text be undefined</p>
+        <p style="text-decoration: line-through">
+          And put a line through this one
+        </p>
+      </div>
+      <div class="types">headings</div>
+      <h1>This is a < h1 > tag</h1>
+      <h2>This is a < h2 > tag</h2>
+      <h3>This is a < h3 > tag</h3>
+      <div class="types">colors</div>
+      <div>
+        <p style="color: #ef5530">Color me orange!</p>
+        <div style="width: 50px; height: 50px; background-color: #ef5530"></div>
+      </div>
+      <div>
+        <p style="color: #4521aa">Color me purple!</p>
+        <div
+          style="
+            width: 50px;
+            height: 50px;
+            background-color: #4521aa;
+            border-radius: 100%;
+          "
+        ></div>
+      </div>
+      <div class="types">buttons</div>
+      <div>
+        <p style="margin: 0">Default</p>
+        <button class="btn">Button</button>
+      </div>
+      <div>
+        <p style="margin: 0">Hovered</p>
+        <button class="btn hovered">Button</button>
+      </div>
+      <div>
+        <p style="margin: 0">Active</p>
+        <button class="btn active">Button</button>
+      </div>
+    </div>
+  </body>
+</html>

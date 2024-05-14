@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="flex justify-center items-center h-screen">
+    <div class="flex flex-col w-[221px] h-1/2 shadow-[2px_2px_30px_#0000001a]">
+      <div
+        class="bg-[#79909D] text-white w-full h-full flex flex-col items-end justify-end"
+      >
+        <div id="expression" class="text-light"></div>
+        <div id="result" class="text-bold text-2xl"></div>
+      </div>
+      <div id="keyboard" class="grid grid-cols-4 gap-[1px] bg-[#E8ECEE]">
+        <div
+          data-value="CE"
+          class="p-4 bg-[#E5E9EC] text-[#748A94] text-center w-full h-full duration-200 hover:scale-110 hover:shadow-[0_2px_10px_#0000001a]"
+        >
+          CE
+        </div>
+        <div
+          data-value="C"
+          class="p-4 bg-[#E5E9EC] text-[#748A94] text-center w-full h-full duration-200 hover:scale-110 hover:shadow-[0_2px_10px_#0000001a]"
+        >
+          C
+        </div>
+        <div
+          data-value="b"
+          class="p-4 bg-[#E5E9EC] text-[#748A94] text-center w-full h-full duration-200 hover:scale-110 hover:shadow-[0_2px_10px_#0000001a]"
+        >
+          <svg
+            class="icon"
+            style="
+              width: 1.5em;
+              height: 1.5em;
+              vertical-align: middle;
+              fill: currentColor;
+              overflow: hidden;
+            "
+            viewBox="0 0 1024 1024"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M484.46100645 627.90138495a28.76779355 28.76779355 0 0 1-20.34016344-49.107957l174.2671828-174.27268816a28.76779355 28.76779355 0 0 1 40.68473118 40.68032687l-174.2671828 174.27819355a28.6940215 28.6940215 0 0 1-20.34456774 8.42322581z"
+            ></path>
+            <path
+              d="M658.72708818 627.90138495a28.68301076 28.68301076 0 0 1-20.34016345-8.42322581l-174.26718279-174.27709248a28.76228818 28.76228818 0 0 1 0-40.68032687 28.75127742 28.75127742 0 0 1 40.68142795 0l174.2671828 174.27268816a28.77990537 28.77990537 0 0 1-20.34126451 49.107957z"
+            ></path>
+            <path
+              d="M834.5379785 821.18854194H340.57028818c-28.46940215 0-55.25305806-12.53684301-73.49016775-34.39428818L75.75838279 556.98112689c-10.54830108-13.06205592-16.20232258-28.91974194-16.1968172-44.98663226 0.00660645-15.39083011 4.67406452-29.85015053 13.50248602-41.81333334 0.33803011-0.45694624 0.68266666-0.90288172 1.04822366-1.33009892L266.70685592 237.63406452a95.32449032 95.32449032 0 0 1 73.86233118-34.82921291H834.5379785c51.98286452 0 94.27516559 42.28789677 94.27516558 94.27076129v429.83776344c0 51.98286452-42.29230108 94.27516559-94.27516558 94.2751656zM119.01522581 504.83420215c-0.90728602 1.35872689-1.91587097 3.52344086-1.91587097 7.17680861 0 2.92005161 1.14952258 6.01517419 3.15568172 8.50140214l191.02114409 229.45307528a38.55965592 38.55965592 0 0 0 29.29300645 13.69297203H834.5379785a36.78472258 36.78472258 0 0 0 36.74508387-36.74508387v-429.83776344a36.78472258 36.78472258 0 0 0-36.74508387-36.73957849H340.5691871a38.60590108 38.60590108 0 0 0-29.53524302 13.96934193L119.01522581 504.83420215z"
+            ></path>
+          </svg>
+        </div>
+        <div
+          data-value="/"
+          class="p-4 bg-[#E5E9EC] text-[#748A94] text-center w-full h-full duration-200 hover:scale-110 hover:shadow-[0_2px_10px_#0000001a]"
+        >
+          ÷
+        </div>
+        <div
+          data-value="7"
+          class="p-4 bg-white text-[#748A94] text-center w-full h-full duration-200 hover:scale-110 hover:shadow-[0_2px_10px_#0000001a]"
+        >
+          7
+        </div>
+        <div
+          data-value="8"
+          class="p-4 bg-white text-[#748A94] text-center w-full h-full duration-200 hover:scale-110 hover:shadow-[0_2px_10px_#0000001a]"
+        >
+          8
+        </div>
+        <div
+          data-value="9"
+          class="p-4 bg-white text-[#748A94] text-center w-full h-full duration-200 hover:scale-110 hover:shadow-[0_2px_10px_#0000001a]"
+        >
+          9
+        </div>
+        <div
+          data-value="*"
+          class="p-4 bg-[#E5E9EC] text-[#748A94] text-center w-full h-full duration-200 hover:scale-110 hover:shadow-[0_2px_10px_#0000001a]"
+        >
+          ×
+        </div>
+        <div
+          data-value="4"
+          class="p-4 bg-white text-[#748A94] text-center w-full h-full duration-200 hover:scale-110 hover:shadow-[0_2px_10px_#0000001a]"
+        >
+          4
+        </div>
+        <div
+          data-value="5"
+          class="p-4 bg-white text-[#748A94] text-center w-full h-full duration-200 hover:scale-110 hover:shadow-[0_2px_10px_#0000001a]"
+        >
+          5
+        </div>
+        <div
+          data-value="6"
+          class="p-4 bg-white text-[#748A94] text-center w-full h-full duration-200 hover:scale-110 hover:shadow-[0_2px_10px_#0000001a]"
+        >
+          6
+        </div>
+        <div
+          data-value="-"
+          class="p-4 bg-[#E5E9EC] text-[#748A94] text-center w-full h-full duration-200 hover:scale-110 hover:shadow-[0_2px_10px_#0000001a]"
+        >
+          -
+        </div>
+        <div
+          data-value="1"
+          class="p-4 bg-white text-[#748A94] text-center w-full h-full duration-200 hover:scale-110 hover:shadow-[0_2px_10px_#0000001a]"
+        >
+          1
+        </div>
+        <div
+          data-value="2"
+          class="p-4 bg-white text-[#748A94] text-center w-full h-full duration-200 hover:scale-110 hover:shadow-[0_2px_10px_#0000001a]"
+        >
+          2
+        </div>
+        <div
+          data-value="3"
+          class="p-4 bg-white text-[#748A94] text-center w-full h-full duration-200 hover:scale-110 hover:shadow-[0_2px_10px_#0000001a]"
+        >
+          3
+        </div>
+        <div
+          data-value="+"
+          class="p-4 bg-[#E5E9EC] text-[#748A94] text-center w-full h-full duration-200 hover:scale-110 hover:shadow-[0_2px_10px_#0000001a]"
+        >
+          +
+        </div>
+        <div
+          data-value="±"
+          class="p-4 bg-white text-[#748A94] text-center w-full h-full duration-200 hover:scale-110 hover:shadow-[0_2px_10px_#0000001a]"
+        >
+          ±
+        </div>
+        <div
+          data-value="0"
+          class="p-4 bg-white text-[#748A94] text-center w-full h-full duration-200 hover:scale-110 hover:shadow-[0_2px_10px_#0000001a]"
+        >
+          0
+        </div>
+        <div
+          data-value="."
+          class="p-4 bg-white text-[#748A94] text-center w-full h-full duration-200 hover:scale-110 hover:shadow-[0_2px_10px_#0000001a]"
+        >
+          .
+        </div>
+        <div
+          data-value="="
+          class="p-4 bg-[#FF6567] text-white text-center w-full h-full duration-200 hover:scale-110 hover:shadow-[0_2px_10px_#0000001a]"
+        >
+          =
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const expression = document.querySelector("#expression");
+      const result = document.querySelector("#result");
+      let currentOperation = "";
+      document.querySelectorAll("#keyboard div").forEach((button) => {
+        button.addEventListener("click", function () {
+          const value = this.getAttribute("data-value");
+
+          if (value === "CE") {
+            currentOperation = "";
+            expression.textContent = "";
+          } else if (value === "=") {
+            currentOperation = eval(currentOperation).toString();
+            expression.textContent = "";
+            result.textContent = currentOperation;
+          } else if (value == "b") {
+            currentOperation = currentOperation.slice(0, -1);
+            expression.textContent = currentOperation;
+          } else {
+            currentOperation += value;
+            expression.textContent = currentOperation;
+            result.textContent = eval(currentOperation).toString();
+          }
+        });
+      });
+    });
+  </script>
+</html>

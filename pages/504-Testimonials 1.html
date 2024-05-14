@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="flex justify-center items-center h-screen bg-[#F5F8FF]">
+    <div class="flex flex-col gap-6">
+      <h1 class="text-center text-lg font-bold font-serif">
+        What our customers have to say
+      </h1>
+      <main class="flex justify-between items-center gap-12">
+        <svg
+          class="icon text-[#d7daf0] cursor-pointer duration-300 hover:scale-150 hover:text-black"
+          style="
+            width: 3em;
+            height: 3em;
+            vertical-align: middle;
+            fill: currentColor;
+            overflow: hidden;
+          "
+          viewBox="0 0 1024 1024"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M639.786667 359.04l-165.546667 165.546667 165.546667 165.546666a42.496 42.496 0 1 1-60.16 60.16l-195.84-195.84a42.496 42.496 0 0 1 0-60.16l195.84-195.84a42.496 42.496 0 0 1 60.16 0c16.213333 16.64 16.64 43.946667 0 60.586667z"
+          ></path>
+        </svg>
+        <div
+          class="flex justify-center items-center flex-col gap-3 w-[300px] h-[228px] bg-white p-9 rounded-lg shadow-lg"
+        >
+          <p>
+            "Thank you! Your product descriptions are amazing and your service
+            is wonderful."
+          </p>
+          <div class="flex justify-between items-center gap-2">
+            <img
+              src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80"
+              alt="customer 1"
+              class="rounded-full w-12 h-12 object-cover object-center"
+            />
+            <ul>
+              <li class="font-bold font-serif">Ronald A. Freeman</li>
+              <li class="text-xs">Electronic technician</li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="flex justify-center items-center flex-col gap-3 w-[300px] h-[228px] bg-white p-9 rounded-lg shadow-lg"
+        >
+          <p>
+            "Would definitely recommend ItemScribe and will definitely be
+            ordering again."
+          </p>
+          <div class="flex justify-between items-center gap-2">
+            <img
+              src="https://images.unsplash.com/photo-1540569014015-19a7be504e3a"
+              alt="customer 2"
+              class="rounded-full w-12 h-12 object-cover object-center"
+            />
+            <ul>
+              <li class="font-bold font-serif">Alice L. Tinker</li>
+              <li class="text-xs">Marine equipment mechanic</li>
+            </ul>
+          </div>
+        </div>
+        <svg
+          class="icon text-[#d7daf0] cursor-pointer duration-300 hover:scale-150 hover:text-black"
+          style="
+            width: 3em;
+            height: 3em;
+            vertical-align: middle;
+            fill: currentColor;
+            overflow: hidden;
+          "
+          viewBox="0 0 1024 1024"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M396.373333 346.453333L561.92 512l-165.546667 165.546667a42.496 42.496 0 1 0 60.16 60.16l195.84-195.84a42.496 42.496 0 0 0 0-60.16L456.533333 285.866667a42.496 42.496 0 0 0-60.16 0c-16.213333 16.64-16.64 43.946667 0 60.586666z"
+          ></path>
+        </svg>
+      </main>
+      <div id="dots" class="flex justify-center gap-2">
+        <button class="w-2 h-2 rounded-full border-2 border-[#D6DBEF]"></button>
+        <button
+          class="w-2 h-2 rounded-full border-2 border-[#D6DBEF] bg-[#D6DBEF]"
+        ></button>
+        <button
+          class="w-2 h-2 rounded-full border-2 border-[#D6DBEF] bg-[#D6DBEF]"
+        ></button>
+      </div>
+    </div>
+  </body>
+  <script>
+    const buttons = document.querySelectorAll("#dots button");
+    buttons.forEach((item) => {
+      item.addEventListener("click", () => {
+        buttons.forEach((item) => item.classList.remove("bg-[#D6DBEF]"));
+        item.classList.add("bg-[#D6DBEF]");
+      });
+    });
+  </script>
+</html>

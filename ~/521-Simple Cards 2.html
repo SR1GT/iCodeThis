@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body
+    class="relative flex justify-center items-center gap-20 h-screen bg-gradient-to-r from-[#D7DAFF] to-[#EFF7FF]"
+  >
+    <div
+      class="bg-white flex flex-col justify-center items-center gap-4 px-12 py-8 w-[320px] rounded-xl shadow-xl translate-y-[-160px] z-10"
+    >
+      <svg
+        class="icon"
+        style="
+          width: 2.5em;
+          height: 2.5em;
+          vertical-align: middle;
+          fill: currentColor;
+          overflow: hidden;
+        "
+        viewBox="0 0 1070 1024"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M883.665455 0H119.156364C72.145455 0 33.512727 38.493091 33.512727 85.317818v831.534546c0 46.824727 38.632727 85.178182 85.643637 85.178181h462.336a327.493818 327.493818 0 0 1-91.694546-227.793454c0-20.340364 1.815273-39.191273 5.399273-59.997091H405.876364c-23.272727 0-42.356364-19.269818-42.356364-42.728727s18.944-42.821818 42.356364-42.821818h117.527272a332.567273 332.567273 0 0 1 113.338182-128.232728H405.876364c-23.272727 0-42.356364-18.152727-42.356364-41.611636s18.944-41.611636 42.356364-41.611636h329.309091c19.735273 0 36.212364 12.846545 40.96 30.952727a332.613818 332.613818 0 0 1 193.62909 32.116363V85.364364A86.295273 86.295273 0 0 0 883.618909 0zM266.938182 713.448727a42.449455 42.449455 0 1 1 0-84.852363 42.449455 42.449455 0 1 1 0 84.852363z m0-212.992a42.449455 42.449455 0 1 1 0-84.852363 42.449455 42.449455 0 1 1 0 84.852363z m0-213.038545a42.449455 42.449455 0 1 1 0-84.805818 42.449455 42.449455 0 1 1 0 84.805818z m468.247273 0.372363H405.876364c-23.272727 0-42.356364-18.152727-42.356364-41.611636s18.944-41.611636 42.356364-41.611636h329.309091c23.319273 0 42.356364 18.152727 42.356363 41.611636a41.797818 41.797818 0 0 1-42.356363 41.611636z m85.038545 237.521455c-138.053818 0-249.856 111.383273-249.856 248.925091s111.802182 248.971636 249.856 248.971636 249.856-111.429818 249.856-248.971636c0-137.402182-111.941818-248.925091-249.856-248.925091z m144.756364 317.253818H825.716364c-1.629091 0-3.490909 0.232727-5.12 0.232727a42.030545 42.030545 0 0 1-42.216728-42.216727v-169.890909c0-23.226182 18.804364-42.170182 42.356364-42.170182s42.356364 18.850909 42.356364 42.170182v128.651636h102.074181c23.272727 0 42.356364 18.152727 42.356364 41.611637a41.797818 41.797818 0 0 1-42.496 41.611636z"
+          fill="#d81e06"
+        ></path>
+      </svg>
+      <h1 class="text-2xl font-bold">Logs</h1>
+      <p class="text-center">
+        Easily visualize your logs in preconfigured dashboards.
+      </p>
+      <button class="text-white bg-[#6376FF] p-4 rounded-md shadow-lg">
+        Add log data
+      </button>
+    </div>
+    <div
+      class="bg-white flex flex-col justify-center items-center gap-12 p-12 w-[530px] rounded-xl shadow-xl z-10"
+    >
+      <div class="flex justify-center items-start gap-12 w-full">
+        <svg
+          class="icon w-1/3"
+          style="
+            width: 3em;
+            height: 3em;
+            vertical-align: middle;
+            fill: currentColor;
+            overflow: hidden;
+          "
+          viewBox="0 0 1024 1024"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M149.942 146.286H874.06c22.216 0 40.228 18.192 40.228 40.634v650.16c0 22.44-18.012 40.634-40.228 40.634H149.94c-22.216 0-40.228-18.192-40.228-40.634V186.92c0-22.44 18.012-40.634 40.228-40.634z m160.916 406.348v162.54h80.456v-162.54H310.86z m160.914-243.808v406.348h80.456V308.826h-80.456z m160.914 121.904v284.444h80.456V430.73h-80.456z"
+            fill="#319BFD"
+          ></path>
+        </svg>
+        <div class="flex flex-col justify-start gap-5 w-2/3">
+          <h1 class="text-2xl font-bold">Statistics</h1>
+          <p>
+            Collect metrics from other systems and services running on your
+            servers.
+          </p>
+          <button
+            class="text-[#6376FF] font-bold border border-[#6376FF] p-4 w-2/3 rounded-md"
+          >
+            Add metrics data
+          </button>
+        </div>
+      </div>
+      <p class="w-[90%] border border-gray-300"></p>
+      <div class="flex justify-center items-start gap-12 w-full">
+        <svg
+          class="icon"
+          style="
+            width: 3em;
+            height: 3em;
+            vertical-align: middle;
+            fill: currentColor;
+            overflow: hidden;
+          "
+          viewBox="0 0 1024 1024"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M512 512.042667m-426.666667 0a426.666667 426.666667 0 1 0 853.333334 0 426.666667 426.666667 0 1 0-853.333334 0Z"
+            fill="#1768E4"
+          ></path>
+          <path
+            d="M512 682.666667c-94.293333 0-179.626667-56.874667-256-170.666667 76.373333-113.749333 161.706667-170.666667 256-170.666667s179.626667 56.917333 256 170.666667c-76.373333 113.792-161.706667 170.666667-256 170.666667z m0-42.666667a128 128 0 1 0 0-256 128 128 0 0 0 0 256z m0-42.666667a85.333333 85.333333 0 1 1 0-170.666666 85.333333 85.333333 0 0 1 0 170.666666z"
+            fill="#FFFFFF"
+          ></path>
+        </svg>
+        <div class="flex flex-col justify-start gap-5 w-2/3">
+          <h1 class="text-2xl font-bold">Watcher</h1>
+          <p>
+            Detect changes in your data by creating, managing and monitoring
+            alerts.
+          </p>
+          <button
+            class="text-[#6376FF] font-bold border border-[#6376FF] p-4 w-2/3 rounded-md"
+          >
+            Turn on
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="absolute bottom-0 w-1/3 h-2/3 bg-[#D2D4FF]"></div>
+  </body>
+</html>

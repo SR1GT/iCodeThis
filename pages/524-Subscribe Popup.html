@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body
+    class="flex justify-center items-center h-screen bg-gradient-to-r from-[#79B5F3] to-[#5779E6]"
+  >
+    <div
+      class="relative flex flex-col justify-center items-start gap-6 bg-white p-10 lg:p-20 duration-300 lg:w-[775px] w-[400px] rounded-sm shadow-[10px_10px_1px_#0000001a]"
+    >
+      <button class="absolute top-8 right-8">
+        <svg
+          class="icon"
+          style="
+            width: 1.5em;
+            height: 1.5em;
+            vertical-align: middle;
+            fill: black;
+            overflow: hidden;
+          "
+          viewBox="0 0 1024 1024"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M548.992 503.744L885.44 167.328a31.968 31.968 0 1 0-45.248-45.248L503.744 458.496 167.328 122.08a31.968 31.968 0 1 0-45.248 45.248l336.416 336.416L122.08 840.16a31.968 31.968 0 1 0 45.248 45.248l336.416-336.416L840.16 885.44a31.968 31.968 0 1 0 45.248-45.248L548.992 503.744z"
+          ></path>
+        </svg>
+      </button>
+      <div class="w-full">
+        <svg
+          class="icon"
+          style="
+            width: 3em;
+            height: 3em;
+            vertical-align: middle;
+            fill: currentColor;
+            overflow: hidden;
+          "
+          viewBox="0 0 1024 1024"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M426.721636 1019.076454c12.791755 8.527836 157.764974 4.263918 166.29281 0 25.583509-21.319591 115.125792-162.028892 4.263918-264.36293-153.501056-149.237138-89.542283-243.043338-89.542282-243.043338S132.511279 695.018669 426.721636 1019.076454"
+            fill="#F9EB85"
+          ></path>
+          <path
+            d="M763.571175 345.377376c-34.111346 55.430937-76.750528 81.014446-76.750528 81.014446 81.014446-324.057784-255.835093-426.391822-255.835093-426.391822C529.055673 358.16913 85.608178 388.016558 85.608178 677.962996c0 289.946439 341.113457 341.113457 341.113458 341.113458C132.511279 695.018669 507.736082 511.670186 507.736082 511.670186s-63.958773 93.806201 89.542282 243.043338c110.861874 102.334037-12.791755 264.362929-12.791754 264.36293 110.861874 0 345.377376-144.973219 345.377375-341.113458 0-200.404156-166.29281-332.585621-166.29281-332.58562"
+            fill="#F06F27"
+          ></path>
+        </svg>
+      </div>
+      <h1 class="w-full text-3xl font-bold">
+        Don't miss<br />our hottest news!
+      </h1>
+      <p class="w-2/3">
+        Enter your email to receive daily round-up of most hottest news
+      </p>
+      <div class="w-full">
+        <div class="flex w-full">
+          <input
+            type="text"
+            placeholder="Your email goes here"
+            class="w-full p-4 border-t border-l border-b border-gray-400"
+          />
+          <button
+          id="submit"
+            class="bg-[#597EE8] text-white duration-300 md:px-8 p-4 border border-[#597EE8]"
+          >
+            Submit
+          </button>
+        </div>
+        <p id="message" class="text-red-500 font-light"></p>
+      </div>
+    </div>
+  </body>
+  <script>
+    const input = document.querySelector("input");
+    const submit = document.querySelector("#submit");
+    const message = document.querySelector("#message");
+    const email = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+    submit.addEventListener("click",() => {
+      if (input.value === '') {
+        message.textContent = "Please enter a valid email address"
+      } else if (!email.test(input.value)) {
+        message.textContent = "Invalid email format"
+      } else {
+        alert("Thank you for subscribing!")
+        submit.textContent = "Submitted!"
+        input.parentElement.style.pointerEvents = "none";
+        input.readOnly = true;
+        submit.disabled = true;
+        submit.classList.add("bg-gray-500")
+      }
+    })
+  </script>
+</html>
