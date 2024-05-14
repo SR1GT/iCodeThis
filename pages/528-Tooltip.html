@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="flex justify-around items-center h-screen bg-[#EEEBEE] mx-">
+    <div class="grid grid-cols-5 gap-4">
+      <div class="bg-white opacity-0 w-[190px] h-[92px]"></div>
+      <div class="bg-white opacity-0 w-[190px] h-[92px]"></div>
+      <div
+        class="relative bg-white rounded-xl shadow-xl px-16 py-8 w-[190px] h-[92px]"
+      >
+        <div
+          class="absolute bottom-[7rem] left-1/2 -translate-x-1/2 flex flex-col justify-center items-center gap-2 px-16 pt-4 pb-12 text-center bg-white rounded-md shadow-md"
+        >
+          <p class="w-[150%] flex justify-end">
+            <svg
+              class="icon"
+              style="
+                width: 1em;
+                height: 1em;
+                vertical-align: middle;
+                fill: black;
+                overflow: hidden;
+              "
+              viewBox="0 0 1024 1024"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M548.992 503.744L885.44 167.328a31.968 31.968 0 1 0-45.248-45.248L503.744 458.496 167.328 122.08a31.968 31.968 0 1 0-45.248 45.248l336.416 336.416L122.08 840.16a31.968 31.968 0 1 0 45.248 45.248l336.416-336.416L840.16 885.44a31.968 31.968 0 1 0 45.248-45.248L548.992 503.744z"
+              ></path>
+            </svg>
+          </p>
+          <p class="w-[130%]">
+            Are you sure you would like to add this member to this event?
+          </p>
+          <div class="flex justify-center items-center gap-6">
+            <button
+              class="bg-[#06B141] border border-[#06B141] text-white px-8 py-1 rounded-md"
+            >
+              Yes
+            </button>
+            <button class="border px-8 py-1 rounded-md">No</button>
+          </div>
+        </div>
+        <span
+          class="rounded-full w-8 h-8 p-4 border-2 border-[#9D9D9D] text-[#9D9D9D] text-xl font-bold"
+        >
+          RP
+        </span>
+        <p
+          class="absolute top-[7rem] left-1/2 -translate-x-1/2 -translate-y-1/2 w-full text-center text-[#6C696B] font-bold"
+        >
+          Ruby Powell
+        </p>
+      </div>
+      <div
+        class="bg-white opacity-[67%] rounded-xl shadow-xl w-[190px] h-[92px]"
+      ></div>
+      <div
+        class="bg-white opacity-[33%] rounded-xl shadow-xl w-[190px] h-[92px]"
+      ></div>
+    </div>
+  </body>
+</html>
