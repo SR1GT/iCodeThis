@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      #zone {
+        border: 2px dashed #423e74;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body
+    class="flex justify-center items-center h-screen bg-[#08043C] text-white"
+  >
+    <div
+      id="browse"
+      class="flex flex-col justifty-center items-center gap-8 px-24 py-16 w-[600px] h-[392px] bg-[#1B174D] rounded-xl"
+    >
+      <h1 class="text-xl font-bold">Upload Photos and Videos</h1>
+      <p class="w-3/5 text-center">
+        We are glad you decided to join our cause!
+      </p>
+      <div id="zone" class="text-center w-4/5 py-6">
+        <button class="bg-[#6148F4] px-12 py-2 rounded-lg mb-2">Browse</button>
+        <p class="text-[#423E74]">or drag and drop</p>
+        <input
+          type="file"
+          id="fileInput"
+          accept="image/*,video/*"
+          style="display: none"
+        />
+      </div>
+    </div>
+    <div
+      id="upload"
+      class="flex justify-center items-top gap-4 py-12 w-[600px] h-[392px] bg-[#1B174D] rounded-xl hidden"
+    >
+      <img
+        src=""
+        alt="photo"
+        class="w-2/5 h-1/2 object-cover object-center rounded-lg"
+      />
+      <form class="flex flex-col gap-4 text-sm w-2/5">
+        <label>
+          Name your file <br />
+          <input
+            type="text"
+            placeholder="Please enter a name for the file"
+            class="border border-[#423E74] rounded-lg w-full p-3 bg-transparent"
+          />
+        </label>
+        <label>
+          Location (optional) <br />
+          <input
+            type="text"
+            placeholder="Eg. On a tree, in the car"
+            class="border border-[#423E74] rounded-lg w-full p-3 bg-transparent"
+          />
+        </label>
+        <label>
+          Tags (optional) <br />
+          <textarea
+            class="border border-[#423E74] rounded-lg w-full p-3 bg-transparent resize-none overflow-hidden"
+            rows="1"
+            placeholder="Press Enter to add tag"
+          ></textarea>
+        </label>
+        <button class="bg-[#6148F4] py-2 rounded-lg">Upload</button>
+      </form>
+    </div>
+  </body>
+  <script>
+    const zone = document.querySelector("#zone");
+    zone.addEventListener("dragover", (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+    });
+    zone.addEventListener("drop", (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      var files = e.dataTransfer.files;
+      for (let i = 0; i < files.length; i++) {
+        handleFile(files[i]);
+      }
+    });
+
+    const browseBtn = zone.querySelector("button");
+    browseBtn.addEventListener("click", () => {
+      var fileInput = document.getElementById("fileInput");
+      var file = fileInput.files[0];
+      if (file) {
+        handleFile(file);
+      }
+      fileInput.click();
+    });
+
+    document
+      .getElementById("fileInput")
+      .addEventListener("change", function (e) {
+        handleFile(e.target.files[0]);
+      });
+
+    const browse = document.querySelector("#browse");
+    const upload = document.querySelector("#upload");
+    function handleFile(file) {
+      if (!file) {
+        return;
+      }
+
+      const reader = new FileReader();
+      reader.onloadend = () => {
+        document.querySelector("img").src = reader.result;
+      };
+      reader.readAsDataURL(file);
+
+      browse.classList.add("hidden");
+      upload.classList.remove("hidden");
+    }
+    upload.querySelector("button").addEventListener("click", () => {
+      alert("Upload succeeded!");
+      upload.classList.add("hidden");
+      browse.classList.remove("hidden");
+    });
+    
+    const tags = document.querySelector("textarea");
+    tags.addEventListener("keydown", (e) => {
+      if (e.key === "Enter") {
+        e.preventDefault();
+        const tag = e.target.value.trim();
+        if (tag) {
+          const tagElement = document.createElement("span");
+          tagElement.classList.add("bg-[#08043C]", "text-white", "px-2", "py-1", "rounded-lg", "mr-1");
+          tagElement.textContent = tag;
+          const del = document.createElement("span");
+          del.classList.add("text-xs", "text-[#312C65]")
+          del.textContent = " x"
+          del.addEventListener("click", ()=>{
+            tagElement.remove();
+          })
+          tagElement.appendChild(del);
+          tags.parentElement.appendChild(tagElement);
+          tags.value = "";
+        }
+      }
+    });
+  </script>
+</html>
