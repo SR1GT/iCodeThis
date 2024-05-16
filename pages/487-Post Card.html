@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="flex justify-center items-center h-screen bg-[#161828]">
+    <div class="flex justify-center gap-4 bg-[#1E2137] p-8 w-1/3">
+      <img
+        src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80"
+        alt="photo"
+        class="w-12 h-12 rounded-full ring-8 ring-[#161A2B] object-cover object-center"
+      />
+      <div class="flex flex-col gap-4 mt-4 w-4/5">
+        <h1 class="text-[#A6A8D6] mb-2">What's happening?</h1>
+        <input
+          type="text"
+          class="bg-transparent border-b-2 border-[#161A2B] outline-none"
+        />
+        <div class="flex justify-between items-center w-full">
+          <div class="flex justify-between items-center text-[#4E506B] w-1/2">
+            <svg
+              class="icon"
+              style="
+                width: 1.5em;
+                height: 1.5em;
+                vertical-align: middle;
+                fill: currentColor;
+                overflow: hidden;
+              "
+              viewBox="0 0 1024 1024"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M819.2 96H204.8c-59.733333 0-108.8 49.066667-108.8 108.8v616.533333c0 59.733333 49.066667 108.8 108.8 108.8h616.533333c59.733333 0 108.8-49.066667 108.8-108.8V204.8c-2.133333-59.733333-51.2-108.8-110.933333-108.8zM160 819.2V204.8c0-23.466667 19.2-44.8 44.8-44.8h616.533333c23.466667 0 44.8 19.2 44.8 44.8v388.266667l-125.866666-125.866667c-27.733333-27.733333-76.8-27.733333-104.533334 0l-390.4 384c-4.266667 4.266667-6.4 8.533333-6.4 12.8H204.8c-25.6 0-44.8-19.2-44.8-44.8z m659.2 44.8H324.266667l354.133333-354.133333c2.133333-2.133333 6.4-2.133333 8.533333-2.133334s4.266667 0 8.533334 2.133334l160 160c4.266667 4.266667 8.533333 6.4 12.8 6.4v142.933333c-4.266667 25.6-23.466667 44.8-49.066667 44.8z"
+              ></path>
+              <path
+                d="M375.466667 482.133333c59.733333 0 106.666667-46.933333 106.666666-106.666666s-46.933333-106.666667-106.666666-106.666667-106.666667 46.933333-106.666667 106.666667 49.066667 106.666667 106.666667 106.666666z m0-149.333333c23.466667 0 42.666667 19.2 42.666666 42.666667s-19.2 42.666667-42.666666 42.666666-42.666667-19.2-42.666667-42.666666 19.2-42.666667 42.666667-42.666667z"
+              ></path>
+            </svg>
+            <svg
+              class="icon"
+              style="
+                width: 1.5em;
+                height: 1.5em;
+                vertical-align: middle;
+                fill: currentColor;
+                overflow: hidden;
+              "
+              viewBox="0 0 1024 1024"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M672 320v384H192V320h480z m48-96h-576A48 48 0 0 0 96 272v480A48 48 0 0 0 144 800h576a48 48 0 0 0 48-48v-168l192 192V248l-192 192V272A48 48 0 0 0 720 224z"
+              ></path>
+            </svg>
+            <svg
+              class="icon"
+              style="
+                width: 1.5em;
+                height: 1.5em;
+                vertical-align: middle;
+                fill: currentColor;
+                overflow: hidden;
+              "
+              viewBox="0 0 1024 1024"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M512.1 63.9C265 63.9 64 265 64 512c0 247.1 201 448.1 448.1 448.1 247.1 0 448.1-201 448.1-448.1 0-247-201.1-448.1-448.1-448.1z m0 800.5c-194.3 0-352.4-158.1-352.4-352.4 0-194.3 158.1-352.4 352.4-352.4 194.3 0 352.4 158.1 352.4 352.4 0 194.3-158.1 352.4-352.4 352.4zM404.9 471.9c36.7 0 66.4-29.7 66.4-66.4s-29.7-66.4-66.4-66.4-66.4 29.7-66.4 66.4c0.1 36.7 29.8 66.4 66.4 66.4z m214.3 0c36.7 0 66.4-29.7 66.4-66.4s-29.7-66.4-66.4-66.4-66.4 29.7-66.4 66.4c0.1 36.7 29.8 66.4 66.4 66.4z m80.5 78.4c-25.4-7.9-52 6.4-59.8 31.6-17.4 56.4-68.9 94.3-128 94.3-58.7 0-110-37.6-127.7-93.5-7.9-25.2-35-39.2-60-31.1-25.2 8-39.1 34.9-31.2 60.1 30.4 95.9 118.4 160.2 218.9 160.2 101.4 0 189.6-65 219.4-161.8 7.8-25.2-6.4-52-31.6-59.8z"
+              ></path>
+            </svg>
+          </div>
+          <button class="bg-[#1E88DD] text-white rounded-full px-6 py-2">
+            Post
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
