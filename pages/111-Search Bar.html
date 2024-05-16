@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        background: linear-gradient(135deg, #4e3b48, #323139);
+      }
+    </style>
+  </head>
+  <body class="flex flex-col justify-center items-center h-screen">
+    <div class="w-1/3">
+      <div class="w-full flex items-center">
+        <input
+          type="text"
+          placeholder="Enter your search here"
+          class="bg-[#655D70] p-4 rounded-md w-full h-1/2 outline-none"
+        />
+        <button
+          class="bg-[#30313A] ring-1 ring-[#655D70] rounded-full p-2 -translate-x-16 flex outline-none"
+        >
+          <span
+            class="bg-[#30313A] text-[#E474A4] ring-4 ring-[#E474A4] rounded-full p-3 text-2xl font"
+            >GO</span
+          >
+        </button>
+      </div>
+      <select class="pl-4 bg-transparent text-[#E474A4] outline-none">
+        <option selected>Filters</option>
+      </select>
+    </div>
+  </body>
+</html>

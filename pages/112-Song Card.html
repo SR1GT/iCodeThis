@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="flex justify-center items-center h-screen bg-[#F2F3F9]">
+    <div
+      class="relative flex justify-around items-center gap-4 bg-white p-4 h-[150px] rounded-lg shadow-lg"
+    >
+      <div
+        class="absolute left-4 top-4 overflow-hidden shadow-[0_10px_10px_#D96C591d]"
+      >
+        <img
+          src="https://www.cafe.se/app/uploads/2018/09/Albin-Lee-Meldau.jpg"
+          alt="singer photo"
+          class="w-[180px] h-[180px] rounded-2xl object-cover object-center overflow-clip"
+        />
+      </div>
+      <div class="ml-52">
+        <h1 class="text-lg font-bold">Albin Lee Meldau</h1>
+        <p class="text-sm">The Weight is Gone - The Purgatory Sessions</p>
+      </div>
+      <div class="flex p-2 bg-[#F3F4FB] rounded-full">
+        <button data-play="1" class="bg-white rounded-full p-1 shadow-md">
+          <svg
+            class="icon"
+            style="
+              width: 1.5em;
+              height: 1.5em;
+              vertical-align: middle;
+              fill: #7e9bfb;
+              overflow: hidden;
+            "
+            viewBox="0 0 1024 1024"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M817.088 484.96l-512-323.744C295.232 154.976 282.752 154.592 272.576 160.224 262.336 165.856 256 176.608 256 188.256l0 647.328c0 11.648 6.336 22.4 16.576 28.032 4.8 2.656 10.112 3.968 15.424 3.968 5.952 0 11.904-1.664 17.088-4.928l512-323.616C826.368 533.184 832 522.976 832 512 832 501.024 826.368 490.816 817.088 484.96z"
+            ></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </body>
+  <script>
+    const button = document.querySelector("button");
+    button.addEventListener("click", () => {
+      if (button.dataset.play === "1") {
+        button.dataset.play = "0";
+        document
+          .querySelector("path")
+          .setAttribute(
+            "d",
+            "M307.785143 861.074286h97.28c37.723429 0 56.996571-19.712 56.996571-57.417143V219.904c0-38.985143-19.273143-56.996571-56.996571-56.996571h-97.28c-37.723429 0-57.417143 19.712-57.417143 56.996571V803.657143c0 37.723429 19.712 57.417143 57.417143 57.417143z m311.149714 0h97.28c37.723429 0 57.417143-19.712 57.417143-57.417143V219.904c0-38.985143-19.712-56.996571-57.417143-56.996571h-97.28c-37.723429 0-56.996571 19.712-56.996571 56.996571V803.657143c0 37.723429 19.273143 57.417143 56.996571 57.417143z"
+          );
+      } else {
+        button.dataset.play = "1";
+        document
+          .querySelector("path")
+          .setAttribute(
+            "d",
+            "M817.088 484.96l-512-323.744C295.232 154.976 282.752 154.592 272.576 160.224 262.336 165.856 256 176.608 256 188.256l0 647.328c0 11.648 6.336 22.4 16.576 28.032 4.8 2.656 10.112 3.968 15.424 3.968 5.952 0 11.904-1.664 17.088-4.928l512-323.616C826.368 533.184 832 522.976 832 512 832 501.024 826.368 490.816 817.088 484.96z"
+          );
+      }
+    });
+  </script>
+</html>
