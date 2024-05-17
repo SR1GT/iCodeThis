@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body
+    class="flex justify-center items-center h-screen bg-[#252746] text-white"
+  >
+    <div
+      class="flex flex-col justify-center bg-[#2A2B4F] w-[500px] rounded-md shadow-lg"
+    >
+      <header class="relative p-8 w-full">
+        <h1 class="text-xl font-bold">Edit Your Account</h1>
+        <svg
+          class="icon absolute top-6 right-6 cursor-pointer"
+          style="
+            width: 1em;
+            height: 1em;
+            vertical-align: middle;
+            fill: white;
+            overflow: hidden;
+          "
+          viewBox="0 0 1024 1024"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M548.992 503.744L885.44 167.328a31.968 31.968 0 1 0-45.248-45.248L503.744 458.496 167.328 122.08a31.968 31.968 0 1 0-45.248 45.248l336.416 336.416L122.08 840.16a31.968 31.968 0 1 0 45.248 45.248l336.416-336.416L840.16 885.44a31.968 31.968 0 1 0 45.248-45.248L548.992 503.744z"
+          ></path>
+        </svg>
+      </header>
+      <main
+        class="flex flex-col justify-center items-start gap-8 bg-[#303057] w-full p-8"
+      >
+        <div class="w-full">
+          <p class="tracking-[3px]">NAME</p>
+          <input
+            type="text"
+            placeholder="Enter your name"
+            class="bg-transparent w-full p-4 border border-slate-600 placeholder:text-slate-400 outline-[#6B6CC0]"
+          />
+        </div>
+        <div class="w-full">
+          <p class="tracking-[3px]">EMAIL</p>
+          <input
+            type="email"
+            placeholder="Enter your email"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+            class="bg-transparent w-full p-4 border border-slate-600 placeholder:text-slate-400 outline-[#6B6CC0]"
+          />
+        </div>
+        <div class="w-full">
+          <p class="tracking-[3px]">DATE OF BIRTH</p>
+          <div class="flex justify-between items-center gap-2 w-full">
+            <input
+              type="number"
+              placeholder="Month"
+              min="1"
+              max="12"
+              class="bg-transparent w-full p-4 border border-slate-600 placeholder:text-slate-400 outline-[#6B6CC0]"
+            />
+            <input
+              type="number"
+              placeholder="Date"
+              min="1"
+              max="31"
+              class="bg-transparent w-full p-4 border border-slate-600 placeholder:text-slate-400 outline-[#6B6CC0]"
+            />
+            <input
+              type="number"
+              placeholder="Year"
+              min="1900"
+              max="2024"
+              class="bg-transparent w-full p-4 border border-slate-600 placeholder:text-slate-400 outline-[#6B6CC0]"
+            />
+          </div>
+        </div>
+      </main>
+      <footer class="grid grid-cols-2 gap-4 w-full p-8">
+        <button class="bg-[#34355B] py-2 rounded-md">Cancel</button>
+        <button class="bg-[#F27363] py-2 rounded-md">Save</button>
+      </footer>
+    </div>
+  </body>
+</html>

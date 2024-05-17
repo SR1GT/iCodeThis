@@ -211,71 +211,31 @@
     });
     function setTime() {
       const time = new Date();
-      switch (time.getDay()) {
-        case 1:
-          document.getElementById("day").textContent = "Mon";
-          break;
-        case 2:
-          document.getElementById("day").textContent = "Tue";
-          break;
-        case 3:
-          document.getElementById("day").textContent = "Wed";
-          break;
-        case 4:
-          document.getElementById("day").textContent = "Thu";
-          break;
-        case 5:
-          document.getElementById("day").textContent = "Fri";
-          break;
-        case 6:
-          document.getElementById("day").textContent = "Sat";
-          break;
-        case 7:
-          document.getElementById("day").textContent = "Sun";
-          break;
-        default:
-          document.getElementById("day").textContent = "Error";
-      }
-      switch (time.getMonth()) {
-        case 0:
-          document.getElementById("month").textContent = "Jan";
-          break;
-        case 1:
-          document.getElementById("month").textContent = "Feb";
-          break;
-        case 2:
-          document.getElementById("month").textContent = "Mar";
-          break;
-        case 3:
-          document.getElementById("month").textContent = "Apr";
-          break;
-        case 4:
-          document.getElementById("month").textContent = "May";
-          break;
-        case 5:
-          document.getElementById("month").textContent = "Jun";
-          break;
-        case 6:
-          document.getElementById("month").textContent = "Jul";
-          break;
-        case 7:
-          document.getElementById("month").textContent = "Aug";
-          break;
-        case 8:
-          document.getElementById("month").textContent = "Sep";
-          break;
-        case 9:
-          document.getElementById("month").textContent = "Oct";
-          break;
-        case 10:
-          document.getElementById("month").textContent = "Nov";
-          break;
-        case 11:
-          document.getElementById("month").textContent = "Dec";
-          break;
-        default:
-          document.getElementById("month").textContent = "Error";
-      }
+      const dayList = new Array(
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri",
+        "Sat",
+        "Sun"
+      );
+      document.getElementById("day").textContent = dayList[time.getDay() - 1];
+      const monthList = new Array(
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      );
+      document.getElementById("month").textContent = monthList[time.getMonth()];
       document.getElementById("date").textContent = time.getDate();
       document.getElementById("year").textContent = time.getFullYear();
     }
