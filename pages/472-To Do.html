@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="flex justify-center items-center h-screen bg-[#F0ECE8]">
+    <div
+      class="relative flex flex-col w-[400px] px-8 pt-8 pb-24 bg-white shadow-xl overflow-hidden"
+    >
+      <svg
+        class="icon absolute top-8 left-8 cursor-pointer z-10"
+        style="
+          width: 2em;
+          height: 2em;
+          vertical-align: middle;
+          fill: white;
+          overflow: hidden;
+        "
+        viewBox="0 0 1024 1024"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M156.608 487.8592c1.156267-1.137067 2.648533-1.6224 3.918933-2.558933l306.666667-301.569067c13.195733-12.970667 34.586667-12.970667 47.781333 0 13.194667 12.978133 13.194667 34.013867 0 46.987733L263.3024 478.210133l579.2032 0c18.978133 0 34.362667 15.128533 34.362667 33.789867 0 18.6624-15.384533 33.793067-34.362667 33.793067L263.3024 545.793067l251.671467 247.486933c13.194667 12.971733 13.194667 34.010667 0 46.984533-13.194667 12.974933-34.586667 12.974933-47.781333 0l-306.666667-301.5616c-1.269333-0.939733-2.762667-1.421867-3.918933-2.562133-6.334933-6.2304-9.240533-14.340267-9.477333-22.5024C147.367467 502.200533 150.273067 494.090667 156.608 487.8592L156.608 487.8592zM156.608 487.8592"
+        ></path>
+      </svg>
+      <header class="text-white text-center mb-12 z-10">
+        <h1 class="text-2xl font-bold">
+          <span id="day">Thu</span>, <span id="month">July</span>
+          <span id="date">6</span>, <span id="year">2017</span>
+        </h1>
+        <p><span id="task-count"></span> tasks</p>
+      </header>
+      <span
+        class="absolute left-1/2 bottom-[25rem] -translate-x-1/2 bg-[#9BC3F2] p-[40rem] rounded-full shadow-[0_0_0_10px_#AAC5E21f]"
+      ></span>
+      <ul class="flex flex-col gap-4">
+        <li class="flex justify-between items-center w-full">
+          <p>Test use cases for the new tool</p>
+          <span
+            class="w-[2em] h-[2em] rounded-full border-4 cursor-pointer"
+          ></span>
+          <svg
+            class="icon cursor-pointer hidden"
+            style="
+              width: 2em;
+              height: 2em;
+              vertical-align: middle;
+              fill: #20e07c;
+              overflow: hidden;
+            "
+            viewBox="0 0 1024 1024"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M512 0a512 512 0 1 0 0 1024A512 512 0 0 0 512 0zM418.084571 775.021714L192.658286 549.595429 267.702857 474.404571l150.308572 150.308572 338.139428-338.139429 75.117714 75.117715-413.257142 413.257142z"
+            ></path>
+          </svg>
+        </li>
+        <li class="flex justify-between items-center w-full">
+          <p>Send out emails</p>
+          <span
+            class="w-[2em] h-[2em] rounded-full border-4 cursor-pointer"
+          ></span>
+          <svg
+            class="icon cursor-pointer hidden"
+            style="
+              width: 2em;
+              height: 2em;
+              vertical-align: middle;
+              fill: #20e07c;
+              overflow: hidden;
+            "
+            viewBox="0 0 1024 1024"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M512 0a512 512 0 1 0 0 1024A512 512 0 0 0 512 0zM418.084571 775.021714L192.658286 549.595429 267.702857 474.404571l150.308572 150.308572 338.139428-338.139429 75.117714 75.117715-413.257142 413.257142z"
+            ></path>
+          </svg>
+        </li>
+        <li class="flex justify-between items-center w-full">
+          <p>Daily UI practice</p>
+          <span
+            class="w-[2em] h-[2em] rounded-full border-4 cursor-pointer"
+          ></span>
+          <svg
+            class="icon cursor-pointer hidden"
+            style="
+              width: 2em;
+              height: 2em;
+              vertical-align: middle;
+              fill: #20e07c;
+              overflow: hidden;
+            "
+            viewBox="0 0 1024 1024"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M512 0a512 512 0 1 0 0 1024A512 512 0 0 0 512 0zM418.084571 775.021714L192.658286 549.595429 267.702857 474.404571l150.308572 150.308572 338.139428-338.139429 75.117714 75.117715-413.257142 413.257142z"
+            ></path>
+          </svg>
+        </li>
+        <li class="flex justify-between items-center w-full">
+          <p>Driving practice</p>
+          <span
+            class="w-[2em] h-[2em] rounded-full border-4 cursor-pointer"
+          ></span>
+          <svg
+            class="icon cursor-pointer hidden"
+            style="
+              width: 2em;
+              height: 2em;
+              vertical-align: middle;
+              fill: #20e07c;
+              overflow: hidden;
+            "
+            viewBox="0 0 1024 1024"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M512 0a512 512 0 1 0 0 1024A512 512 0 0 0 512 0zM418.084571 775.021714L192.658286 549.595429 267.702857 474.404571l150.308572 150.308572 338.139428-338.139429 75.117714 75.117715-413.257142 413.257142z"
+            ></path>
+          </svg>
+        </li>
+        <li class="flex justify-between items-center w-full">
+          <p>Water flowers</p>
+          <span
+            class="w-[2em] h-[2em] rounded-full border-4 cursor-pointer"
+          ></span>
+          <svg
+            class="icon cursor-pointer hidden"
+            style="
+              width: 2em;
+              height: 2em;
+              vertical-align: middle;
+              fill: #20e07c;
+              overflow: hidden;
+            "
+            viewBox="0 0 1024 1024"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M512 0a512 512 0 1 0 0 1024A512 512 0 0 0 512 0zM418.084571 775.021714L192.658286 549.595429 267.702857 474.404571l150.308572 150.308572 338.139428-338.139429 75.117714 75.117715-413.257142 413.257142z"
+            ></path>
+          </svg>
+        </li>
+        <li class="flex justify-between items-center w-full">
+          <p>Upload PSD files to Dropbox</p>
+          <span
+            class="w-[2em] h-[2em] rounded-full border-4 cursor-pointer"
+          ></span>
+          <svg
+            class="icon cursor-pointer hidden"
+            style="
+              width: 2em;
+              height: 2em;
+              vertical-align: middle;
+              fill: #20e07c;
+              overflow: hidden;
+            "
+            viewBox="0 0 1024 1024"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M512 0a512 512 0 1 0 0 1024A512 512 0 0 0 512 0zM418.084571 775.021714L192.658286 549.595429 267.702857 474.404571l150.308572 150.308572 338.139428-338.139429 75.117714 75.117715-413.257142 413.257142z"
+            ></path>
+          </svg>
+        </li>
+      </ul>
+      <button
+        class="absolute right-4 bottom-4 p-4 bg-[#9BC3F2] rounded-full shadow-lg"
+      >
+        <svg
+          class="icon"
+          style="
+            width: 2em;
+            height: 2em;
+            vertical-align: middle;
+            fill: white;
+            overflow: hidden;
+          "
+          viewBox="0 0 1024 1024"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M902.453225 458.944644 566.002426 458.944644 566.002426 122.503055c0-32.323173-21.61939-58.513672-48.266283-58.513672l-10.742668 0c-26.666336 0-48.266283 26.189476-48.266283 58.513672l0 336.441589L122.267183 458.944644c-32.313963 0-58.513672 21.618367-58.513672 48.275493l0 10.733459c0 26.657126 26.199709 48.275493 58.513672 48.275493l336.441589 0 0 336.441589c0 32.323173 21.618367 58.513672 48.284703 58.513672l10.723226 0c26.666336 0 48.285726-26.190499 48.285726-58.513672L566.002426 566.228065l336.450798 0c32.30373 0 58.513672-21.618367 58.513672-48.275493l0-10.733459C960.966896 480.56301 934.757978 458.944644 902.453225 458.944644z"
+          ></path>
+        </svg>
+      </button>
+    </div>
+  </body>
+  <script>
+    const todoItems = document.querySelectorAll("li");
+    todoItems.forEach((todoItem) => {
+      const p = todoItem.querySelector("p");
+      const span = todoItem.querySelector("span");
+      const svg = todoItem.querySelector("svg");
+      span.addEventListener("click", () => {
+        p.classList.add("text-gray-500", "line-through");
+        span.classList.add("hidden");
+        svg.classList.remove("hidden");
+      });
+      svg.addEventListener("click", () => {
+        p.classList.remove("text-gray-500");
+        p.classList.remove("line-through");
+        span.classList.remove("hidden");
+        svg.classList.add("hidden");
+      });
+    });
+    function setTime() {
+      const time = new Date();
+      switch (time.getDay()) {
+        case 1:
+          document.getElementById("day").textContent = "Mon";
+          break;
+        case 2:
+          document.getElementById("day").textContent = "Tue";
+          break;
+        case 3:
+          document.getElementById("day").textContent = "Wed";
+          break;
+        case 4:
+          document.getElementById("day").textContent = "Thu";
+          break;
+        case 5:
+          document.getElementById("day").textContent = "Fri";
+          break;
+        case 6:
+          document.getElementById("day").textContent = "Sat";
+          break;
+        case 7:
+          document.getElementById("day").textContent = "Sun";
+          break;
+        default:
+          document.getElementById("day").textContent = "Error";
+      }
+      switch (time.getMonth()) {
+        case 0:
+          document.getElementById("month").textContent = "Jan";
+          break;
+        case 1:
+          document.getElementById("month").textContent = "Feb";
+          break;
+        case 2:
+          document.getElementById("month").textContent = "Mar";
+          break;
+        case 3:
+          document.getElementById("month").textContent = "Apr";
+          break;
+        case 4:
+          document.getElementById("month").textContent = "May";
+          break;
+        case 5:
+          document.getElementById("month").textContent = "Jun";
+          break;
+        case 6:
+          document.getElementById("month").textContent = "Jul";
+          break;
+        case 7:
+          document.getElementById("month").textContent = "Aug";
+          break;
+        case 8:
+          document.getElementById("month").textContent = "Sep";
+          break;
+        case 9:
+          document.getElementById("month").textContent = "Oct";
+          break;
+        case 10:
+          document.getElementById("month").textContent = "Nov";
+          break;
+        case 11:
+          document.getElementById("month").textContent = "Dec";
+          break;
+        default:
+          document.getElementById("month").textContent = "Error";
+      }
+      document.getElementById("date").textContent = time.getDate();
+      document.getElementById("year").textContent = time.getFullYear();
+    }
+    function setTaskCount() {
+      document.getElementById("task-count").textContent = todoItems.length;
+    }
+    setTime();
+    setTaskCount();
+  </script>
+</html>

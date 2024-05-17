@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body
+    class="flex flex-col justify-center items-center h-screen bg-[#FFF5ED] text-[#989898]"
+  >
+    <h1 class="text-[#A172F7] text-3xl font-bold mb-2">
+      Your account is closed
+    </h1>
+    <p class="mb-8">
+      Could you spare a minute to tell us how we could improve?
+    </p>
+    <div
+      class="flex flex-col justify-center bg-white px-6 py-8 rounded-lg shadow-lg"
+    >
+      <p class="mb-4">
+        How likely is that you would recommend us to your friends or colleagues?
+      </p>
+      <div id="rating" class="flex items-center gap-2 mb-6">
+        <button class="text-center aspect-square w-8 bg-[#F7F7F7]">1</button>
+        <button class="text-center aspect-square w-8 bg-[#F7F7F7]">2</button>
+        <button class="text-center aspect-square w-8 bg-[#F7F7F7]">3</button>
+        <button class="text-center aspect-square w-8 bg-[#F7F7F7]">4</button>
+        <button class="text-center aspect-square w-8 bg-[#F7F7F7]">5</button>
+        <button class="text-center aspect-square w-8 bg-[#F7F7F7]">6</button>
+        <button class="text-center aspect-square w-8 bg-[#F7F7F7]">7</button>
+        <button class="text-center aspect-square w-8 bg-[#F7F7F7]">8</button>
+        <button class="text-center aspect-square w-8 bg-[#F7F7F7]">9</button>
+        <button class="text-center aspect-square w-8 bg-[#F7F7F7]">10</button>
+      </div>
+      <p>How can we improve?</p>
+      <textarea
+        class="p-4 border resize-none placeholder:text-gray-200 mb-8"
+        placeholder="Type your suggestion here"
+        rows="4"
+      ></textarea>
+      <button class="text-[#F17F03] py-4">Submit</button>
+    </div>
+  </body>
+  <script>
+    const buttons = document.querySelectorAll("#rating button");
+    buttons.forEach((button) => {
+      button.addEventListener("click", () => {
+        buttons.forEach((oButton) => {
+          oButton.classList.remove("shadow-lg");
+          oButton.classList.remove("text-white");
+          oButton.classList.remove("bg-[#F17F03]");
+          oButton.classList.add("bg-[#F7F7F7]");
+        });
+        button.classList.add("shadow-lg");
+        button.classList.add("text-white");
+        button.classList.remove("bg-[#F7F7F7]");
+        button.classList.add("bg-[#F17F03]");
+      });
+    });
+  </script>
+</html>
