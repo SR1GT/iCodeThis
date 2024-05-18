@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="relative flex justify-center items-center h-screen bg-[#EFF2FA]">
+    <div
+      class="absolute top-24 grid grid-cols-3 gap-8 p-4 bg-white rounded-full shadow-lg"
+    >
+      <div class="flex justify-center items-center gap-1 text-xs">
+        <svg
+          class="icon"
+          style="
+            width: 1em;
+            height: 1em;
+            vertical-align: middle;
+            fill: currentColor;
+            overflow: hidden;
+          "
+          viewBox="0 0 1024 1024"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M835.413333 316.586667a42.666667 42.666667 0 0 1-12.586666 30.293333L431.786667 737.92C418.773333 750.933333 405.333333 768 384 746.666667l-202.24-207.36a44.8 44.8 0 0 1-4.053333-60.16 42.666667 42.666667 0 0 1 62.506666-2.133334l161.066667 161.066667a6.826667 6.826667 0 0 0 9.813333 0l352.853334-353.066667a38.4 38.4 0 0 1 37.76-10.666666 44.16 44.16 0 0 1 33.706666 42.24z"
+          ></path>
+        </svg>
+        30 days open purchase
+      </div>
+      <div class="flex justify-center items-center gap-1 text-xs">
+        <svg
+          class="icon"
+          style="
+            width: 1em;
+            height: 1em;
+            vertical-align: middle;
+            fill: currentColor;
+            overflow: hidden;
+          "
+          viewBox="0 0 1024 1024"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M835.413333 316.586667a42.666667 42.666667 0 0 1-12.586666 30.293333L431.786667 737.92C418.773333 750.933333 405.333333 768 384 746.666667l-202.24-207.36a44.8 44.8 0 0 1-4.053333-60.16 42.666667 42.666667 0 0 1 62.506666-2.133334l161.066667 161.066667a6.826667 6.826667 0 0 0 9.813333 0l352.853334-353.066667a38.4 38.4 0 0 1 37.76-10.666666 44.16 44.16 0 0 1 33.706666 42.24z"
+          ></path>
+        </svg>
+        Safe home delivery
+      </div>
+      <div class="flex justify-center items-center gap-1 text-xs">
+        <svg
+          class="icon"
+          style="
+            width: 1em;
+            height: 1em;
+            vertical-align: middle;
+            fill: currentColor;
+            overflow: hidden;
+          "
+          viewBox="0 0 1024 1024"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M835.413333 316.586667a42.666667 42.666667 0 0 1-12.586666 30.293333L431.786667 737.92C418.773333 750.933333 405.333333 768 384 746.666667l-202.24-207.36a44.8 44.8 0 0 1-4.053333-60.16 42.666667 42.666667 0 0 1 62.506666-2.133334l161.066667 161.066667a6.826667 6.826667 0 0 0 9.813333 0l352.853334-353.066667a38.4 38.4 0 0 1 37.76-10.666666 44.16 44.16 0 0 1 33.706666 42.24z"
+          ></path>
+        </svg>
+        Free shipping over $70
+      </div>
+    </div>
+    <div class="absolute bottom-36 left-96">
+      <div
+        class="relative flex flex-col justify-center items-center gap-2 p-4 w-64 bg-white rounded-xl shadow-lg"
+      >
+        <img
+          src="https://images.unsplash.com/photo-1665655277264-2e365eb4049a"
+          alt="image"
+          class="absolute -top-8 w-48 h-48 aspect-square rounded-lg shadow-xl"
+        />
+        <p class="text-xs mt-40">DIXIE</p>
+        <p>Cue Chair, wood</p>
+        <p>
+          <span class="font-bold text-lg">$57</span>
+          <span class="line-through">$120</span>
+        </p>
+        <div
+          class="flex items-center gap-1 text-xs bg-[#F1F1FC] rounded-full px-2 py-1"
+        >
+          <p class="w-[5px] h-[5px] rounded-full bg-[#50DE67]"></p>
+          In stock
+        </div>
+      </div>
+    </div>
+    <div class="absolute top-48 right-96 flex flex-col justify-center items-center px-8 pt-12 pb-8 bg-white rounded-xl shadow-lg">
+      <div class="flex justify-center items-center w-72 h-2 bg-[#F4F5F9]">
+        <div id="slider-min" class="relative w-[25px] aspect-square bg-[#7598FE] rounded-full shadow-xl cursor-pointer ml-[20%]">
+          <div class="absolute left-1/2 -translate-x-1/2 -translate-y-8 text-xs bg-white shadow-lg p-1">$115</div>
+        </div>
+        <div class="bg-[#7598FE] w-full h-2"></div>
+        <div id="slider-max" class="relative w-[25px] aspect-square bg-[#7598FE] rounded-full shadow-xl cursor-pointer mr-[26%]">
+          <div class="absolute left-1/2 -translate-x-1/2 -translate-y-8 text-xs bg-white shadow-lg p-1">$260</div>
+        </div>
+      </div>
+      <div class="w-72 flex justify-between text-gray-500 text-xs">
+        <div class="relative">
+          <p>|</p>
+          <p class="absolute -translate-x-1/2">$50</p>
+        </div>
+        <div class="relative">
+          <p>|</p>
+          <p class="absolute -translate-x-1/2">$100</p>
+        </div>
+        <div class="relative">
+          <p>|</p>
+          <p class="absolute -translate-x-1/2">$150</p>
+        </div>
+        <div class="relative">
+          <p>|</p>
+          <p class="absolute -translate-x-1/2">$200</p>
+        </div>
+        <div class="relative">
+          <p>|</p>
+          <p class="absolute -translate-x-1/2">$250</p>
+        </div>
+        <div class="relative">
+          <p>|</p>
+          <p class="absolute -translate-x-1/2">$300</p>
+        </div>
+        <div class="relative">
+          <p>|</p>
+          <p class="absolute -translate-x-1/2">$350</p>
+        </div>
+      </div>
+    </div>
+    <div class="absolute right-96 bottom-72 flex justify-center items-center gap-8 text-xs">
+      <div>365 products</div>
+      <div class="flex items-center gap-1">
+        Show by 48
+        <svg
+          class="icon duration-300"
+          style="
+            width: 1em;
+            height: 1em;
+            vertical-align: middle;
+            fill: currentColor;
+            overflow: hidden;
+          "
+          viewBox="0 0 1024 1024"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M512.146286 619.52L245.296762 352.792381 193.584762 404.48l318.585905 318.415238 318.268952-318.415238-51.736381-51.687619z"
+          ></path>
+        </svg>
+      </div>
+      <div id="sort-by" class="relative flex items-center gap-1">
+        Sort by
+        <svg
+          class="icon cursor-pointer duration-300"
+          style="
+            width: 1em;
+            height: 1em;
+            vertical-align: middle;
+            fill: currentColor;
+            overflow: hidden;
+          "
+          viewBox="0 0 1024 1024"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M512.146286 454.753524l-266.849524 266.727619L193.584762 669.744762l318.585905-318.415238 318.268952 318.415238-51.736381 51.687619z"
+          ></path>
+        </svg>
+        <ul
+          class="absolute top-8 right-0 grid grid-rows-4 p-2 text-left bg-white rounded-md shadow-xl"
+        >
+          <li class="p-4 border-b">Popularity</li>
+          <li class="p-4 border-b">Price rising</li>
+          <li class="p-4 border-b">Price falling</li>
+          <li class="p-4">Highest&nbsp;discount</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+  <script>
+    const sortBy = document.getElementById("sort-by");
+    sortBy.querySelector("svg").addEventListener("click", () => {
+      sortBy.querySelector("ul").classList.toggle("hidden");
+      sortBy.querySelector("ul").classList.contains("hidden")
+        ? (sortBy.querySelector("svg").style.transform = "rotate(180deg)")
+        : (sortBy.querySelector("svg").style.transform = "rotate(0deg)");
+    });
+  </script>
+</html>
