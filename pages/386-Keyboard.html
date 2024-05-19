@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="flex flex-col justify-center items-center gap-8 h-screen"
+  style="background: linear-gradient(-135deg, #1369c3, #273896)">
+  <p class="bg-white w-96 h-10 flex justify-center items-center rounded-full shadow-xl overflow-hidden">
+    <textarea class="resize-none mx-4 p-2 w-full outline-none" readonly></textarea>
+  </p>
+  <div id="kb-abc" class="grid gap-2 p-2 bg-[#283492] text-white rounded-lg shadow-xl"
+    style="grid-template-columns: repeat(20, minmax(0, 1fr))">
+    <button class="key col-span-2 p-1 bg-[#242E7D] text-xl text-center rounded-md duration-300 hover:scale-110">
+      Q
+    </button>
+    <button class="key col-span-2 p-1 bg-[#242E7D] text-xl text-center rounded-md duration-300 hover:scale-110">
+      W
+    </button>
+    <button class="key col-span-2 p-1 bg-[#242E7D] text-xl text-center rounded-md duration-300 hover:scale-110">
+      E
+    </button>
+    <button class="key col-span-2 p-1 bg-[#242E7D] text-xl text-center rounded-md duration-300 hover:scale-110">
+      R
+    </button>
+    <button class="key col-span-2 p-1 bg-[#242E7D] text-xl text-center rounded-md duration-300 hover:scale-110">
+      T
+    </button>
+    <button class="key col-span-2 p-1 bg-[#242E7D] text-xl text-center rounded-md duration-300 hover:scale-110">
+      Y
+    </button>
+    <button class="key col-span-2 p-1 bg-[#242E7D] text-xl text-center rounded-md duration-300 hover:scale-110">
+      U
+    </button>
+    <button class="key col-span-2 p-1 bg-[#242E7D] text-xl text-center rounded-md duration-300 hover:scale-110">
+      I
+    </button>
+    <button class="key col-span-2 p-1 bg-[#242E7D] text-xl text-center rounded-md duration-300 hover:scale-110">
+      O
+    </button>
+    <button class="key col-span-2 p-1 bg-[#242E7D] text-xl text-center rounded-md duration-300 hover:scale-110">
+      P
+    </button>
+
+    <div></div>
+    <button class="key col-span-2 p-1 bg-[#242E7D] text-xl text-center rounded-md duration-300 hover:scale-110">
+      A
+    </button>
+    <button class="key col-span-2 p-1 bg-[#242E7D] text-xl text-center rounded-md duration-300 hover:scale-110">
+      S
+    </button>
+    <button class="key col-span-2 p-1 bg-[#242E7D] text-xl text-center rounded-md duration-300 hover:scale-110">
+      D
+    </button>
+    <button class="key col-span-2 p-1 bg-[#242E7D] text-xl text-center rounded-md duration-300 hover:scale-110">
+      F
+    </button>
+    <button class="key col-span-2 p-1 bg-[#242E7D] text-xl text-center rounded-md duration-300 hover:scale-110">
+      G
+    </button>
+    <button class="key col-span-2 p-1 bg-[#242E7D] text-xl text-center rounded-md duration-300 hover:scale-110">
+      H
+    </button>
+    <button class="key col-span-2 p-1 bg-[#242E7D] text-xl text-center rounded-md duration-300 hover:scale-110">
+      J
+    </button>
+    <button class="key col-span-2 p-1 bg-[#242E7D] text-xl text-center rounded-md duration-300 hover:scale-110">
+      K
+    </button>
+    <button class="key col-span-2 p-1 bg-[#242E7D] text-xl text-center rounded-md duration-300 hover:scale-110">
+      L
+    </button>
+
+    <button id="shift"
+      class="col-span-3 p-1 bg-[#242E7D] rounded-md flex justify-center items-center duration-300 hover:scale-110"
+      data-on="0">
+      <svg class="icon" style="
+            width: 1.25em;
+            height: 1.25em;
+            vertical-align: middle;
+            fill: currentColor;
+            overflow: hidden;
+          " viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M379.794286 909.714286h264.411428c60.013714 0 92.16-35.145143 92.16-91.721143v-192h174.427429c34.706286 0 62.134857-21.430857 62.134857-53.997714 0-20.132571-9.874286-35.145143-25.709714-50.56L564.937143 140.434286c-16.292571-16.713143-33.865143-26.148571-52.717714-26.148572-19.291429 0-36.425143 9.435429-53.156572 26.148572L76.8 521.435429c-16.274286 16.274286-25.709714 30.427429-25.709714 50.56 0 32.585143 27.428571 53.997714 62.573714 53.997714h173.988571v192c0 56.576 32.146286 91.721143 92.16 91.721143z m6.857143-66.432c-16.292571 0-27.428571-11.154286-27.428572-26.989715V575.853714c0-10.715429-3.858286-14.573714-14.153143-14.573714H147.510857c-3.017143 0-4.717714-1.28-4.717714-3.419429 0-1.718857 0.420571-2.998857 2.56-5.138285l357.851428-355.712a11.154286 11.154286 0 0 1 9.014858-4.297143c2.998857 0 5.577143 0.859429 8.996571 4.297143l357.851429 355.712c1.718857 2.139429 2.578286 3.419429 2.578285 5.12 0 2.157714-1.718857 3.437714-4.717714 3.437714H678.948571c-10.294857 0-14.134857 3.858286-14.134857 14.573714v240.438857c0 15.414857-11.574857 26.989714-27.428571 26.989715z">
+        </path>
+      </svg>
+    </button>
+    <button class="key col-span-2 p-1 bg-[#242E7D] text-xl text-center rounded-md duration-300 hover:scale-110">
+      Z
+    </button>
+    <button class="key col-span-2 p-1 bg-[#242E7D] text-xl text-center rounded-md duration-300 hover:scale-110">
+      X
+    </button>
+    <button class="key col-span-2 p-1 bg-[#242E7D] text-xl text-center rounded-md duration-300 hover:scale-110">
+      C
+    </button>
+    <button class="key col-span-2 p-1 bg-[#242E7D] text-xl text-center rounded-md duration-300 hover:scale-110">
+      V
+    </button>
+    <button class="key col-span-2 p-1 bg-[#242E7D] text-xl text-center rounded-md duration-300 hover:scale-110">
+      B
+    </button>
+    <button class="key col-span-2 p-1 bg-[#242E7D] text-xl text-center rounded-md duration-300 hover:scale-110">
+      N
+    </button>
+    <button class="key col-span-2 p-1 bg-[#242E7D] text-xl text-center rounded-md duration-300 hover:scale-110">
+      M
+    </button>
+    <button id="delete"
+      class="col-span-3 p-1 bg-[#F40057] rounded-md flex justify-center items-center duration-300 hover:scale-110">
+      <svg class="icon" style="
+            width: 1.25em;
+            height: 1.25em;
+            vertical-align: middle;
+            fill: currentColor;
+            overflow: hidden;
+          " viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M934.229333 853.333333H373.888c-12.586667 0-25.173333-4.821333-32.981333-14.506666l-284.117334-292.992c-18.816-19.328-18.816-49.92 0-67.626667L340.906667 185.173333c7.850667-9.685333 20.394667-14.506667 32.981333-14.506666h560.341333C960.938667 170.666667 981.333333 191.573333 981.333333 218.965333v586.069334c0 27.349333-20.394667 48.298667-47.104 48.298666zM392.704 756.736h494.464V267.264H392.704L155.690667 512l237.013333 244.736z">
+        </path>
+        <path
+          d="M738.048 677.845333c-12.586667 0-23.552-4.821333-32.981333-14.506666l-227.584-233.472c-18.858667-19.285333-18.858667-49.92 0-67.584 18.816-19.328 48.64-19.328 65.92 0l227.584 233.429333c18.858667 19.328 18.858667 49.92 0 67.626667-9.386667 9.685333-21.973333 14.506667-32.938667 14.506666z">
+        </path>
+        <path
+          d="M510.421333 677.845333c-12.544 0-23.552-4.821333-32.938666-14.506666-18.858667-19.328-18.858667-49.92 0-67.626667l227.584-233.429333c18.858667-19.328 48.64-19.328 65.92 0 17.28 19.285333 18.858667 49.92 0 67.626666l-227.584 233.429334c-9.386667 9.685333-20.394667 14.506667-32.981334 14.506666z">
+        </path>
+      </svg>
+    </button>
+
+    <button id="to-123" class="col-span-3 p-1 bg-[#242E7D] text-center rounded-md duration-300 hover:scale-110">
+      123
+    </button>
+    <button id="language"
+      class="col-span-3 p-1 bg-[#242E7D] rounded-md flex justify-center items-center duration-300 hover:scale-110">
+      <svg class="icon" style="
+            width: 1.25em;
+            height: 1.25em;
+            vertical-align: middle;
+            fill: currentColor;
+            overflow: hidden;
+          " viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M512 85.333333C277.333333 85.333333 85.333333 277.333333 85.333333 512s192 426.666667 426.666667 426.666667c234.666667 0 426.666667-192 426.666667-426.666667S746.666667 85.333333 512 85.333333zM806.4 341.333333 682.666667 341.333333c-12.8-55.466667-34.133333-102.4-59.733333-153.6C699.733333 217.6 768 268.8 806.4 341.333333zM512 170.666667c34.133333 51.2 64 106.666667 81.066667 170.666667l-162.133333 0C448 281.6 477.866667 221.866667 512 170.666667zM183.466667 597.333333C174.933333 571.733333 170.666667 541.866667 170.666667 512s4.266667-59.733333 12.8-85.333333l145.066667 0c-4.266667 29.866667-4.266667 55.466667-4.266667 85.333333s4.266667 55.466667 4.266667 85.333333L183.466667 597.333333zM217.6 682.666667 341.333333 682.666667c12.8 55.466667 34.133333 102.4 59.733333 153.6C324.266667 806.4 256 755.2 217.6 682.666667zM341.333333 341.333333 217.6 341.333333c42.666667-72.533333 106.666667-123.733333 183.466667-153.6C375.466667 238.933333 354.133333 285.866667 341.333333 341.333333zM512 853.333333c-34.133333-51.2-64-106.666667-81.066667-170.666667l162.133333 0C576 742.4 546.133333 802.133333 512 853.333333zM610.133333 597.333333 413.866667 597.333333c-4.266667-29.866667-8.533333-55.466667-8.533333-85.333333s4.266667-55.466667 8.533333-85.333333l200.533333 0c4.266667 29.866667 8.533333 55.466667 8.533333 85.333333S614.4 567.466667 610.133333 597.333333zM622.933333 836.266667c25.6-46.933333 46.933333-98.133333 59.733333-153.6l123.733333 0C768 755.2 699.733333 806.4 622.933333 836.266667zM699.733333 597.333333c4.266667-29.866667 4.266667-55.466667 4.266667-85.333333s-4.266667-55.466667-4.266667-85.333333l145.066667 0c8.533333 25.6 12.8 55.466667 12.8 85.333333s-4.266667 59.733333-12.8 85.333333L699.733333 597.333333z">
+        </path>
+      </svg>
+    </button>
+    <button id="voice"
+      class="col-span-2 p-1 bg-[#242E7D] rounded-md flex justify-center items-center duration-300 hover:scale-110">
+      <svg class="icon" style="
+            width: 1.25em;
+            height: 1.25em;
+            vertical-align: middle;
+            fill: currentColor;
+            overflow: hidden;
+          " viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M835.936 309.664c-16.288 0-29.472 13.728-29.472 30.688 0 1.856-0.032 154.528-0.064 158.752-2.592 164.352-134.688 298.048-294.368 298.048-160.416 0-292.448-134.304-294.4-299.232-0.032-4.448-0.032-156.16-0.032-157.568 0-16.96-13.152-30.688-29.472-30.688-16.256 0-29.408 13.728-29.408 30.688 0 1.376 0 157.152 0.032 158.24 2.208 188.256 144.928 343.2 323.872 358.688 0 0.288-0.032 0.576-0.032 0.96l0 83.104-133.824 0c-16.288 0-29.472 13.728-29.472 30.688s13.152 30.688 29.472 30.688l326.592 0c16.288 0 29.408-13.76 29.408-30.688 0-16.96-13.152-30.688-29.408-30.688l-133.92 0 0-83.104c0-0.384 0-0.672-0.032-0.96 178.208-15.52 320.864-169.696 323.872-357.12 0-1.888 0.032-157.92 0.032-159.808 0.032-16.992-13.152-30.688-29.376-30.688l0 0 0 0z">
+        </path>
+        <path
+          d="M512.032 21.312c-112 0-203.168 94.112-203.168 209.728l0 264.992c0 115.616 91.168 209.728 203.168 209.728s203.168-94.112 203.168-209.728l0-264.992c0-115.648-91.168-209.728-203.168-209.728zM656.352 496.032c0 81.824-64.736 148.384-144.288 148.384s-144.288-66.592-144.288-148.384l0-264.992c0-81.824 64.736-148.384 144.288-148.384s144.288 66.592 144.288 148.384l0 264.992z">
+        </path>
+      </svg>
+    </button>
+    <button id="space" class="col-span-8 p-1 bg-[#242E7D] text-center rounded-md duration-300 hover:scale-110">
+      space
+    </button>
+    <button id="search" class="col-span-4 p-1 bg-[#242E7D] text-center rounded-md duration-300 hover:scale-110">
+      Search
+    </button>
+  </div>
+  <div id="kb-123" class="grid grid-cols-8 gap-2 p-2 bg-[#283492] text-white rounded-lg shadow-xl hidden">
+    <button id="to-abc" class="col-span-3 p-1 bg-[#242E7D] text-xl text-center rounded-md duration-300 hover:scale-110">
+      abc
+    </button>
+    <a href="https://github.com/SR1GT" target="_blank"
+      class="col-span-5 p-1 bg-[#242E7D] text-xl text-center rounded-md duration-300 hover:scale-110">SR1GT</a>
+    <button
+      class="nkey col-span-2 p-1 bg-[#242E7D] text-xl text-center rounded-md duration-300 hover:scale-110">7</button>
+    <button
+      class="nkey col-span-2 p-1 bg-[#242E7D] text-xl text-center rounded-md duration-300 hover:scale-110">8</button>
+    <button
+      class="nkey col-span-2 p-1 bg-[#242E7D] text-xl text-center rounded-md duration-300 hover:scale-110">9</button>
+    <button
+      class="nkey col-span-2 p-1 bg-[#242E7D] text-xl text-center rounded-md duration-300 hover:scale-110">/</button>
+    <button
+      class="nkey col-span-2 p-1 bg-[#242E7D] text-xl text-center rounded-md duration-300 hover:scale-110">4</button>
+    <button
+      class="nkey col-span-2 p-1 bg-[#242E7D] text-xl text-center rounded-md duration-300 hover:scale-110">5</button>
+    <button
+      class="nkey col-span-2 p-1 bg-[#242E7D] text-xl text-center rounded-md duration-300 hover:scale-110">6</button>
+    <button
+      class="nkey col-span-2 p-1 bg-[#242E7D] text-xl text-center rounded-md duration-300 hover:scale-110">*</button>
+    <button
+      class="nkey col-span-2 p-1 bg-[#242E7D] text-xl text-center rounded-md duration-300 hover:scale-110">1</button>
+    <button
+      class="nkey col-span-2 p-1 bg-[#242E7D] text-xl text-center rounded-md duration-300 hover:scale-110">2</button>
+    <button
+      class="nkey col-span-2 p-1 bg-[#242E7D] text-xl text-center rounded-md duration-300 hover:scale-110">3</button>
+    <button
+      class="nkey col-span-2 p-1 bg-[#242E7D] text-xl text-center rounded-md duration-300 hover:scale-110">-</button>
+    <button
+      class="nkey col-span-4 p-1 bg-[#242E7D] text-xl text-center rounded-md duration-300 hover:scale-110">0</button>
+    <button
+      class="nkey col-span-2 p-1 bg-[#242E7D] text-xl text-center rounded-md duration-300 hover:scale-110">.</button>
+    <button
+      class="nkey col-span-2 p-1 bg-[#242E7D] text-xl text-center rounded-md duration-300 hover:scale-110">+</button>
+  </div>
+</body>
+<script>
+  const shift = document.getElementById("shift");
+  shift.addEventListener("click", () => {
+    if (shift.dataset.on === "1") {
+      shift.dataset.on = 0;
+      shift
+        .querySelector("path")
+        .setAttribute(
+          "d",
+          "M379.794286 909.714286h264.411428c60.013714 0 92.16-35.145143 92.16-91.721143v-192h174.427429c34.706286 0 62.134857-21.430857 62.134857-53.997714 0-20.132571-9.874286-35.145143-25.709714-50.56L564.937143 140.434286c-16.292571-16.713143-33.865143-26.148571-52.717714-26.148572-19.291429 0-36.425143 9.435429-53.156572 26.148572L76.8 521.435429c-16.274286 16.274286-25.709714 30.427429-25.709714 50.56 0 32.585143 27.428571 53.997714 62.573714 53.997714h173.988571v192c0 56.576 32.146286 91.721143 92.16 91.721143z m6.857143-66.432c-16.292571 0-27.428571-11.154286-27.428572-26.989715V575.853714c0-10.715429-3.858286-14.573714-14.153143-14.573714H147.510857c-3.017143 0-4.717714-1.28-4.717714-3.419429 0-1.718857 0.420571-2.998857 2.56-5.138285l357.851428-355.712a11.154286 11.154286 0 0 1 9.014858-4.297143c2.998857 0 5.577143 0.859429 8.996571 4.297143l357.851429 355.712c1.718857 2.139429 2.578286 3.419429 2.578285 5.12 0 2.157714-1.718857 3.437714-4.717714 3.437714H678.948571c-10.294857 0-14.134857 3.858286-14.134857 14.573714v240.438857c0 15.414857-11.574857 26.989714-27.428571 26.989715z"
+        );
+      shift.classList.add("bg-[#242E7D]");
+      shift.classList.remove("bg-[#1B276A]");
+    } else {
+      shift.dataset.on = 1;
+      shift
+        .querySelector("path")
+        .setAttribute(
+          "d",
+          "M379.794286 909.714286h264.411428c60.013714 0 92.16-35.145143 92.16-91.721143v-192h174.427429c34.706286 0 62.134857-21.430857 62.134857-53.997714 0-20.132571-9.874286-35.145143-25.709714-50.56L564.937143 140.434286c-16.292571-16.713143-33.865143-26.148571-52.717714-26.148572-19.291429 0-36.425143 9.435429-53.156572 26.148572L76.8 521.435429c-16.274286 16.274286-25.709714 30.427429-25.709714 50.56 0 32.585143 27.428571 53.997714 62.573714 53.997714h173.988571v192c0 56.576 32.146286 91.721143 92.16 91.721143z"
+        );
+      shift.classList.add("bg-[#1B276A]");
+      shift.classList.remove("bg-[#242E7D]");
+    }
+  });
+  const textarea = document.querySelector("textarea")
+  const keys = document.querySelectorAll(".key")
+  keys.forEach((key) => {
+    key.addEventListener("click", () => {
+      let letter = shift.dataset.on === "1" ? key.textContent.replace(/[\s\n\r]/g, '') : key.textContent.toLowerCase().replace(/[\s\n\r]/g, '')
+      textarea.textContent += letter
+    })
+  })
+  const nkeys = document.querySelectorAll(".nkey")
+  nkeys.forEach((key) => {
+    key.addEventListener("click", () => {
+      textarea.textContent += key.textContent
+    })
+  })
+  document.getElementById("delete").addEventListener("click", () => {
+    textarea.textContent = textarea.textContent.slice(0, -1)
+  })
+  document.getElementById("language").addEventListener("click", () => {
+    alert("Multilingual input is not supported!")
+  })
+  document.getElementById("voice").addEventListener("click", () => {
+    alert("Voice input is not supported!")
+  })
+  document.getElementById("space").addEventListener("click", () => {
+    textarea.textContent += " "
+  })
+  document.getElementById("search").addEventListener("click", () => {
+    window.open(`https://www.google.com/search?q=${textarea.textContent}`)
+  })
+
+  const keyboardABC = document.getElementById("kb-abc")
+  const keyboard123 = document.getElementById("kb-123")
+  document.getElementById("to-123").addEventListener("click", () => {
+    keyboardABC.classList.add("hidden")
+    keyboard123.classList.remove("hidden")
+  })
+  document.getElementById("to-abc").addEventListener("click", () => {
+    keyboardABC.classList.remove("hidden")
+    keyboard123.classList.add("hidden")
+  })
+</script>
+
+</html>

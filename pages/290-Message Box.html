@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="flex justify-center items-center h-screen bg-[#EEF1F9]">
+  <div class="flex flex-col w-96 bg-white rounded-xl shadow-xl overflow-hidden">
+    <header class="flex justify-between items-center p-6 w-full bg-[#EB8E8E]">
+      <h1 class="text-white text-xl font-mono">Send us a message</h1>
+      <span class="w-6 h-1 bg-white rounded-full cursor-pointer"></span>
+    </header>
+    <main class="flex flex-col justify-center items-center gap-4 px-6 pt-6 pb-12 w-full">
+      <div class="w-full">
+        <p class="text-gray-500 text-xs font-bold uppercase">your name</p>
+        <input type="text" placeholder="Enter your name" class="w-full bg-transparent border p-2 outline-none" />
+      </div>
+      <div class="w-full">
+        <p class="text-gray-500 text-xs font-bold uppercase">email address</p>
+        <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Enter your email address"
+          class="w-full bg-transparent border p-2 outline-none" />
+      </div>
+      <div class="w-full">
+        <p class="text-gray-500 text-xs font-bold uppercase">what can we do for you?</p>
+        <textarea placeholder="Type your message here" rows="4"
+          class="w-full bg-transparent border p-2 resize-none outline-none"></textarea>
+      </div>
+      <div class="w-full">
+        <p class="text-gray-500 text-xs font-bold uppercase">attachments</p>
+        <div class="text-center w-full border py-2" style="border-style: dashed;">
+          <input type="file" class="w-0 h-0 opacity-0" />
+          <span class="text-gray-500">Upload Files</span>
+        </div>
+      </div>
+      <button class="text-white bg-[#EB8E8E] py-2 w-full rounded-lg shadow-xl">Send Message</button>
+    </main>
+  </div>
+</body>
+
+</html>
