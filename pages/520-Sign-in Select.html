@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="flex justify-center items-center gap-8 h-screen bg-[#F0F4F9]">
+  <div class="flex flex-col justify-center items-center w-full max-w-sm p-8 bg-white rounded-xl shadow-xl">
+    <header class="flex w-full justify-between items-center mb-4">
+      <h1 class="text-lg font-bold">Recommended</h1>
+      <a class="text-sky-500">View all</a>
+    </header>
+    <ul class="flex flex-col w-full">
+      <li class="flex justify-start items-center gap-2 w-full p-4 cursor-pointer">
+        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80" alt="photo 1"
+          class="w-16 h-16 rounded-full object-cover object-center" />
+        <div>
+          <h3 class="font-bold">Winnie Brock</h3>
+          <p class="text-sm">Service designer</p>
+        </div>
+      </li>
+      <li
+        class="flex justify-start items-center gap-2 w-full p-4 cursor-pointer bg-[#6795FF] text-white rounded-md shadow-md">
+        <img src="https://images.unsplash.com/photo-1540569014015-19a7be504e3a" alt="photo 2"
+          class="w-16 h-16 rounded-full object-cover object-center" />
+        <div>
+          <h3 class="font-bold">Louisa Harrison</h3>
+          <p class="text-sm">Brand designer</p>
+        </div>
+      </li>
+      <li class="flex justify-start items-center gap-2 w-full p-4 cursor-pointer">
+        <img src="https://images.unsplash.com/photo-1599566150163-29194dcaad36" alt="photo 1"
+          class="w-16 h-16 rounded-full object-cover object-center" />
+        <div>
+          <h3 class="font-bold">Todd Bridges</h3>
+          <p class="text-sm">Brand designer</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="flex flex-col items-center">
+    <div
+      class="flex justify-between items-center gap-4 w-full max-w-64 p-4 rounded-md shadow-md bg-[#6795FF] text-white">
+      <div class="flex items-center gap-4">
+        <img id="selected-img" src="https://images.unsplash.com/photo-1540569014015-19a7be504e3a" alt="photo"
+          class="w-10 h-10 rounded-full object-cover object-center" />
+        <p id="selected-name">Louisa Harrison</p>
+      </div>
+      <svg class="icon cursor-pointer"
+        style="width: 1em;height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;"
+        viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M512 622.336l311.168-311.168a42.667 42.667 0 0 1 60.33 60.33L542.166 712.833a42.667 42.667 0 0 1-60.33 0L140.5 371.499a42.667 42.667 0 0 1 60.331-60.331L512 622.336z">
+        </path>
+      </svg>
+    </div>
+    <div class="flex flex-col justify-center items-center gap-4 w-full max-w-sm mt-8 p-9 bg-white rounded-md shadow-md">
+      <svg class="icon" style="width: 6em;height: 6em;vertical-align: middle;fill: currentColor;overflow: hidden;"
+        viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M320 128v185.632c0 105.712 82.704 196.4 188.4 198.336C616.08 513.936 704 427.232 704 320V128a16 16 0 0 0-16-16H336a16 16 0 0 0-16 16z"
+          fill="#FFD740"></path>
+        <path
+          d="M512.016 520l-3.776-0.032C400.032 517.984 312 425.424 312 313.648V128c0-13.232 10.768-24 24-24h352c13.232 0 24 10.768 24 24v192c0 54.112-21.264 104.8-59.888 142.72a198.608 198.608 0 0 1-140.096 57.28zM336 120a8 8 0 0 0-8 8v185.648c0 103.12 80.992 188.496 180.544 190.336a182.72 182.72 0 0 0 132.352-52.672A182.72 182.72 0 0 0 696 320V128a8 8 0 0 0-8-8H336z"
+          fill="#263238"></path>
+        <path
+          d="M337.632 408H296c-61.76 0-112-50.256-112-112v-112c0-17.648 14.352-32 32-32H320a8 8 0 0 1 8 8v48a8 8 0 0 1-8 8h-72v80c0 26.464 21.536 48 48 48h16v-23.92a8 8 0 0 1 16 0 182.256 182.256 0 0 0 16.896 76.576 8.016 8.016 0 0 1-7.264 11.344z m-121.632-240c-8.816 0-16 7.168-16 16v112c0 52.944 43.056 96 96 96h29.552a198.048 198.048 0 0 1-9.472-32H296c-35.296 0-64-28.704-64-64V208a8 8 0 0 1 8-8h72v-32h-96zM728 408h-41.632a8.016 8.016 0 0 1-7.264-11.344A182.48 182.48 0 0 0 696 320V160a8 8 0 0 1 8-8h104c17.648 0 32 14.352 32 32v112c0 61.744-50.24 112-112 112z m-29.552-16H728c52.944 0 96-43.056 96-96v-112c0-8.832-7.184-16-16-16h-96v32H784a8 8 0 0 1 8 8v88c0 35.296-28.704 64-64 64h-20.064a200.224 200.224 0 0 1-9.488 32z m13.552-48h16c26.464 0 48-21.536 48-48v-80h-64v128z"
+          fill="#263238"></path>
+        <path
+          d="M512 216l24.72 52.672L592 277.12l-40 40.992 9.456 57.888L512 348.672 462.56 376l9.44-57.888L432 277.12l55.28-8.448z"
+          fill="#FFFFFF"></path>
+        <path
+          d="M462.56 384a8.048 8.048 0 0 1-7.904-9.28l8.8-53.904-37.184-38.112a8 8 0 0 1 4.512-13.504l51.056-7.792 22.912-48.816a8.016 8.016 0 0 1 14.496 0l22.912 48.816 51.056 7.792c2.96 0.448 5.424 2.512 6.368 5.36s0.24 5.984-1.856 8.144l-37.184 38.112 8.784 53.904a8 8 0 0 1-11.776 8.272L512 357.808l-45.584 25.184a7.84 7.84 0 0 1-3.856 1.008z m-13.952-101.328l29.12 29.84a8.032 8.032 0 0 1 2.176 6.88l-6.8 41.648 35.024-19.36a7.904 7.904 0 0 1 7.728 0l35.024 19.36-6.784-41.648a8.064 8.064 0 0 1 2.176-6.88l29.12-29.84-39.888-6.096a8 8 0 0 1-6.032-4.496L512 234.832l-17.488 37.248a8 8 0 0 1-6.032 4.496l-39.872 6.096zM256 696a8 8 0 0 1-7.584-5.472l-8.848-26.528a37.44 37.44 0 0 0-23.568-23.568l-26.544-8.848a8 8 0 0 1 0.016-15.184l26.528-8.848a37.376 37.376 0 0 0 23.568-23.568l8.848-26.528c2.176-6.528 12.992-6.528 15.168 0l8.848 26.528a37.44 37.44 0 0 0 23.568 23.568l26.544 8.848a8.048 8.048 0 0 1-0.016 15.2l-26.528 8.832a37.376 37.376 0 0 0-23.568 23.568l-8.848 26.528A8 8 0 0 1 256 696zM217.296 624l3.76 1.248a53.504 53.504 0 0 1 33.68 33.68l1.264 3.776 1.264-3.76a53.504 53.504 0 0 1 33.68-33.68l3.76-1.264-3.76-1.248a53.504 53.504 0 0 1-33.68-33.68L256 585.296l-1.264 3.76a53.504 53.504 0 0 1-33.68 33.68l-3.76 1.264zM768 696a8 8 0 0 1-7.584-5.472l-8.848-26.528a37.44 37.44 0 0 0-23.568-23.568l-26.544-8.848a8 8 0 0 1 0.016-15.184l26.528-8.848a37.376 37.376 0 0 0 23.568-23.568l8.848-26.528c2.176-6.528 12.992-6.528 15.168 0l8.848 26.528a37.44 37.44 0 0 0 23.568 23.568l26.544 8.848a8.048 8.048 0 0 1-0.016 15.2l-26.528 8.832a37.376 37.376 0 0 0-23.568 23.568l-8.848 26.528A8 8 0 0 1 768 696zM729.296 624l3.76 1.248a53.504 53.504 0 0 1 33.68 33.68l1.264 3.776 1.264-3.76a53.504 53.504 0 0 1 33.68-33.68l3.76-1.264-3.76-1.248a53.504 53.504 0 0 1-33.68-33.68L768 585.296l-1.264 3.76a53.504 53.504 0 0 1-33.68 33.68l-3.76 1.264zM592 760H432a8 8 0 0 1-7.92-9.104l34.576-245.632a8.032 8.032 0 0 1 9.808-6.672c29.488 7.2 57.616 7.184 87.072 0.016a8.016 8.016 0 0 1 9.808 6.656l34.576 245.632A8 8 0 0 1 592 760z m-150.8-16h141.6l-32.096-227.936a193.424 193.424 0 0 1-77.408 0L441.2 744z"
+          fill="#263238"></path>
+        <path d="M671.984 832h-320v-40a40 40 0 0 1 40-40h240a40 40 0 0 1 40 40V832z" fill="#FFD740"></path>
+        <path
+          d="M672 840H352a8 8 0 0 1-8-8v-40c0-26.464 21.536-48 48-48h240c26.464 0 48 21.536 48 48V832a8 8 0 0 1-8 8z m-312-16h304v-32c0-17.648-14.352-32-32-32h-240c-17.648 0-32 14.352-32 32v32z"
+          fill="#263238"></path>
+        <path d="M695.984 912h-368a40 40 0 1 1 0-80h368a40 40 0 1 1 0 80z" fill="#FFD740"></path>
+        <path
+          d="M696 920h-368c-26.464 0-48-21.536-48-48s21.536-48 48-48h368c26.464 0 48 21.536 48 48s-21.536 48-48 48z m-368-80c-17.648 0-32 14.352-32 32s14.352 32 32 32h368c17.648 0 32-14.352 32-32s-14.352-32-32-32h-368z"
+          fill="#263238"></path>
+        <path d="M768 920H256a8 8 0 0 1 0-16h512a8 8 0 0 1 0 16z" fill="#263238"></path>
+        <path d="M224 920h-32a8 8 0 0 1 0-16h32a8 8 0 0 1 0 16z" fill="#263238"></path>
+        <path d="M832 920h-32a8 8 0 0 1 0-16h32a8 8 0 0 1 0 16z" fill="#263238"></path>
+      </svg>
+      <p class="text-center w-3/4 mb-2">Sign in discover creatives and participate in or post a challenge.</p>
+      <button class="bg-[#6795FF] text-white py-4 w-full rounded-md shadow-md">Sign in</button>
+    </div>
+  </div>
+</body>
+<script>
+  const list = document.querySelectorAll('li');
+  list.forEach(li => {
+    li.addEventListener('click', () => {
+      list.forEach(oLi => {
+        oLi.classList.remove("bg-[#6795FF]")
+        oLi.classList.remove("text-white")
+        oLi.classList.remove("rounded-md")
+        oLi.classList.remove("shadow-md")
+      })
+      li.classList.add("bg-[#6795FF]", "text-white", "rounded-md", "shadow-md")
+      document.getElementById("selected-img").src = li.querySelector("img").src
+      document.getElementById("selected-name").textContent = li.querySelector("h3").textContent
+    });
+  });
+</script>
+
+</html>
