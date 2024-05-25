@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="relative flex justify-center items-center h-screen bg-[#F4F7FF]">
+  <nav class="absolute top-20 flex justify-center items-center gap-2 mb-16">
+    <button class="bg-[#13192E] text-white px-4 py-1 rounded-full shadow-md">Small</button>
+    <button class="bg-white px-4 py-1 rounded-full shadow-md">Medium</button>
+    <button class="bg-white px-4 py-1 rounded-full shadow-md">Large</button>
+  </nav>
+  <section class="flex flex-col justify-center items-center px-16 py-6 bg-white rounded-md shadow-md">
+    <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80" alt="user photo"
+      class="w-16 aspect-square rounded-full object-cover object-center mb-4" />
+    <h1 class="text-lg font-bold">Sally Ramos</h1>
+    <p class="text-sm text-gray-500 mb-4">@sallytheramos</p>
+    <button followed="0"
+      class="follow px-4 py-2 rounded-full bg-[#13192E] text-white duration-300 hover:scale-110">Follow</button>
+  </section>
+  <section class="flex flex-col justify-center p-8 bg-white rounded-md shadow-md hidden">
+    <div class="flex justify-between items-center w-full mb-4">
+      <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80" alt="user photo"
+        class="w-16 aspect-square rounded-full object-cover object-center" />
+      <button followed="0"
+        class="follow px-4 py-2 rounded-full bg-[#13192E] text-white duration-300 hover:scale-110">Follow</button>
+    </div>
+    <h1 class="text-lg font-bold">Sally Ramos</h1>
+    <p class="text-sm text-gray-500 mb-4">@sallytheramos</p>
+    <p class="text-sm">Product Designer at @company. Working<br /> on @othercompany in my free time.</p>
+  </section>
+  <section class="flex flex-col justify-center w-[450px] p-8 bg-white rounded-md shadow-md hidden">
+    <div class="flex justify-between items-center w-full mb-4">
+      <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80" alt="user photo"
+        class="w-16 aspect-square rounded-full object-cover object-center" />
+      <button followed="0"
+        class="follow px-4 py-2 rounded-full bg-[#13192E] text-white duration-300 hover:scale-110">Follow</button>
+    </div>
+    <h1 class="text-lg font-bold">Sally Ramos</h1>
+    <p class="text-sm text-gray-500 mb-4">@sallytheramos</p>
+    <p class="text-sm mb-4">Product Designer at @company.<br />Working on @othercompany in my free<br />time.</p>
+    <div class="text-sm text-gray-500 flex items-center">
+      <div>
+        <strong>15K</strong> Followers
+      </div>
+      <div class="w-1 aspect-square rounded-full bg-gray-500 mx-1"></div>
+      <div>
+        <strong>7K</strong> Following
+      </div>
+      <div class="w-1 aspect-square rounded-full bg-gray-500 mx-1"></div>
+      <div>
+        Since April 30, 2017
+      </div>
+    </div>
+  </section>
+</body>
+<script>
+  const nav = document.querySelectorAll('nav button');
+  let selected = 0;
+  const section = document.querySelectorAll('section');
+  nav.forEach((button, index) => {
+    button.addEventListener('click', () => {
+      nav.forEach(oButton => {
+        oButton.classList.remove('bg-[#13192E]', 'text-white');
+        oButton.classList.add('bg-white');
+      })
+      button.classList.add('bg-[#13192E]', 'text-white');
+      button.classList.remove('bg-white');
+      if (selected !== index) {
+        selected = index;
+        section.forEach(oSection => {
+          oSection.classList.remove('flex');
+          oSection.classList.add('hidden');
+        })
+        section[selected].classList.add('flex');
+        section[selected].classList.remove('hidden');
+      }
+    })
+  });
+
+  const follow = document.querySelectorAll('.follow');
+  follow.forEach(button => {
+    button.addEventListener('click', () => {
+      if (button.dataset.followed === "0") {
+        button.dataset.followed = "1";
+        button.classList.add('bg-white', 'text-gray-500', 'border', 'border-gray-500');
+        button.classList.remove('bg-[#13192E]', 'text-white');
+        button.textContent = 'Following';
+      } else {
+        button.dataset.followed = "0";
+        button.classList.add('bg-[#13192E]', 'text-white');
+        button.classList.remove('bg-white', 'text-gray-500', 'border', 'border-gray-500');
+        button.textContent = 'Follow';
+      }
+    })
+  });
+</script>
+
+</html>
