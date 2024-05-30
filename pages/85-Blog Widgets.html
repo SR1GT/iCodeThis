@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="relative flex justify-center items-center gap-8 h-screen bg-[#F8EAFC]">
+  <nav class="absolute top-4 flex gap-2">
+    <button class="px-4 py-2 rounded-full bg-[#1B2554] text-white">Search</button>
+    <button class="bg-white px-4 py-2 rounded-full">Tags</button>
+    <button class="bg-white px-4 py-2 rounded-full">Recent posts</button>
+  </nav>
+  <section id="search"
+    class="flex justify-center items-center gap-4 w-[500px] bg-[#F8EAFC] border-8 border-white p-8 rounded-xl shadow-xl">
+    <div class="flex items-center gap-2 w-full bg-white p-2 rounded-xl overflow-hidden">
+      <svg class="icon" style="width: 1.5em;height: 1.5em;vertical-align: middle;fill: currentColor;overflow: hidden;"
+        viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M883.626667 823.04l-145.066667-144.64A337.92 337.92 0 0 0 810.666667 469.333333a341.333333 341.333333 0 1 0-341.333334 341.333334 337.92 337.92 0 0 0 209.066667-72.106667l144.64 145.066667a42.666667 42.666667 0 0 0 60.586667 0 42.666667 42.666667 0 0 0 0-60.586667zM213.333333 469.333333a256 256 0 1 1 256 256 256 256 0 0 1-256-256z">
+        </path>
+      </svg>
+      <input type="text" placeholder="Search articles, topics, etc." class="w-full outline-none" />
+    </div>
+    <button class="px-4 py-2 text-white font-light bg-[#1B2554] rounded-xl">Search</button>
+  </section>
+  <section id="tags"
+    class="flex flex-col justify-center gap-4 w-[610px] bg-[#F8EAFC] border-8 border-white p-8 rounded-xl shadow-xl hidden">
+    <h1 class="text-xl font-serif font-bold">Tags</h1>
+    <div class="flex flex-wrap gap-2">
+      <button class="bg-white px-3 py-2 rounded-full">Blender</button>
+      <button class="bg-white px-3 py-2 rounded-full">Browser</button>
+      <button class="bg-white px-3 py-2 rounded-full">cross-platform</button>
+      <button class="bg-white px-3 py-2 rounded-full">HoloLens</button>
+      <button class="bg-white px-3 py-2 rounded-full">Microsoft</button>
+      <button class="bg-white px-3 py-2 rounded-full">Mixed Reality</button>
+      <button class="px-3 py-2 rounded-full bg-[#1B2554] text-white">modelling</button>
+      <button class="bg-white px-3 py-2 rounded-full">MR</button>
+      <button class="bg-white px-3 py-2 rounded-full">nodejs</button>
+      <button class="bg-white px-3 py-2 rounded-full">streamsocket</button>
+      <button class="bg-white px-3 py-2 rounded-full">unity</button>
+      <button class="bg-white px-3 py-2 rounded-full">unity3D</button>
+      <button class="bg-white px-3 py-2 rounded-full">unreal engine</button>
+      <button class="bg-white px-3 py-2 rounded-full">VR</button>
+      <button class="bg-white px-3 py-2 rounded-full">websockets</button>
+    </div>
+  </section>
+  <section id="recent-posts"
+    class="flex flex-col justify-center gap-4 w-[500px] bg-[#F8EAFC] border-8 border-white p-8 rounded-xl shadow-xl hidden">
+    <h1 class="text-xl font-serif font-bold">Recent posts</h1>
+    <div class="flex flex-col gap-2">
+      <button class="text-left font-bold p-3 rounded-xl">Azure Speech Studio for Mixed Reality</button>
+      <button class="text-left font-bold p-3 rounded-xl bg-white">HoloLens 2 Unreal Project Template</button>
+      <button class="text-left font-bold p-3 rounded-xl">Simplygon in Azure</button>
+      <button class="text-left font-bold p-3 rounded-xl">Blender in Azure</button>
+      <button class="text-left font-bold p-3 rounded-xl">AAD Login on HoloLens 2</button>
+    </div>
+  </section>
+</body>
+<script>
+  const sections = document.querySelectorAll("section");
+
+  const navButtons = document.querySelectorAll("nav button")
+  navButtons.forEach((btn, index) => {
+    btn.addEventListener("click", () => {
+      navButtons.forEach(oBtn => {
+        oBtn.classList.remove("bg-[#1B2554]", "text-white");
+        oBtn.classList.add("bg-white")
+      });
+      btn.classList.add("bg-[#1B2554]", "text-white");
+      btn.classList.remove("bg-white")
+
+      sections.forEach(section => {
+        section.classList.add("hidden");
+      });
+      sections[index].classList.remove("hidden");
+    });
+  });
+
+  const tags = document.getElementById("tags").querySelectorAll("button");
+  tags.forEach(tag => {
+    tag.addEventListener("click", () => {
+      tags.forEach(oTag => {
+        oTag.classList.remove("bg-[#1B2554]", "text-white");
+        oTag.classList.add("bg-white")
+      });
+      tag.classList.add("bg-[#1B2554]", "text-white");
+      tag.classList.remove("bg-white")
+    });
+  });
+
+  const posts = document.getElementById("recent-posts").querySelectorAll("button");
+  posts.forEach(post => {
+    post.addEventListener("click", () => {
+      posts.forEach(oPost => {
+        oPost.classList.remove("bg-white");
+      });
+      post.classList.add("bg-white");
+    });
+  });
+</script>
+
+</html>
