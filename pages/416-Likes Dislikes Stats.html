@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="flex justify-center items-center h-screen bg-[#F7F8E4]">
+  <div class="flex flex-col justify-center items-center gap-6 w-1/2 p-12 bg-white shadow-lg">
+    <header class="flex flex-col items-center">
+      <svg class="icon" style="width: 5em;height: 5em;vertical-align: middle;fill: currentColor;overflow: hidden;"
+        viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M561.066667 655.786667c-9.386667-13.653333-26.026667-21.333333-45.226667-21.333334H416.426667c-6.4 0-12.8-2.56-16.64-7.68a23.978667 23.978667 0 0 1-5.12-18.773333l12.373333-79.36c5.12-23.466667-10.666667-50.346667-34.133333-58.453333-22.186667-8.106667-47.786667 2.986667-58.453334 18.773333l-101.973333 151.466667-2.986667 5.12v214.186666l3.84 3.84 76.8 59.306667c10.24 10.24 33.28 15.786667 49.493334 15.786667h94.293333c32.426667 0 64.853333-24.32 72.533333-54.186667l59.733334-181.333333c5.973333-17.493333 4.266667-34.133333-5.12-47.36z"
+          fill="#292D32" opacity=".4"></path>
+        <path
+          d="M162.986667 567.466667h-24.746667c-37.546667 0-52.906667 14.506667-52.906667 50.346666v243.626667c0 35.84 15.36 50.346667 52.906667 50.346667h24.746667c37.546667 0 52.906667-14.506667 52.906666-50.346667v-243.626667c0-35.84-15.36-50.346667-52.906666-50.346666z"
+          fill="#292D32"></path>
+        <path
+          d="M477.866667 366.933333c9.386667 13.653333 26.026667 21.333333 45.226666 21.333334h99.413334c6.4 0 12.8 2.56 16.64 7.68 4.266667 5.12 5.973333 11.52 5.12 18.773333l-12.373334 79.36c-5.12 23.466667 10.666667 50.346667 34.133334 58.453333 22.186667 8.106667 47.786667-2.986667 58.453333-18.773333l101.973333-151.466667 2.986667-5.12V162.986667l-3.84-3.84-76.8-59.306667c-10.24-10.24-33.28-15.786667-49.493333-15.786667h-94.293334c-32.426667 0-64.853333 24.32-72.533333 54.186667l-59.733333 181.333333c-5.973333 17.066667-4.266667 34.133333 5.12 47.36z"
+          fill="#292D32" opacity=".4"></path>
+        <path
+          d="M875.946667 455.253333h24.746666c37.546667 0 52.906667-14.506667 52.906667-50.346666V161.28c0-35.84-15.36-50.346667-52.906667-50.346667h-24.746666c-37.546667 0-52.906667 14.506667-52.906667 50.346667v243.626667c0 35.84 15.36 50.346667 52.906667 50.346666z"
+          fill="#292D32"></path>
+      </svg>
+      <h1 class="text-xl font-bold">Likes vs. Dislike</h1>
+      <h3 class="uppercase">past 7 days</h3>
+    </header>
+    <main class="w-full text-gray-400">
+      <div class="flex flex-col gap-10 w-full">
+        <div class="flex items-center gap-2">
+          <h2>300</h2>
+          <div class="w-full border-t border-gray-300"></div>
+        </div>
+        <div class="flex items-center gap-2">
+          <h2>250</h2>
+          <div class="w-full border-t border-gray-300"></div>
+        </div>
+        <div class="flex items-center gap-2">
+          <h2>200</h2>
+          <div class="w-full border-t border-gray-300"></div>
+        </div>
+        <div class="flex items-center gap-2">
+          <h2>150</h2>
+          <div class="w-full border-t border-gray-300"></div>
+        </div>
+        <div class="flex items-center gap-2">
+          <h2>100</h2>
+          <div class="w-full border-t border-gray-300"></div>
+        </div>
+        <div class="flex items-center gap-2">
+          <h2>&nbsp;&nbsp;0</h2>
+          <div class="w-full border-t border-gray-300"></div>
+        </div>
+      </div>
+      <div class="flex justify-between items-center w-[90%] ml-[10%]">
+        <div class="relative">
+          <div class="absolute -top-[13.75rem] left-1/2 -translate-x-1/2 flex items-end gap-1">
+            <div class="w-2 h-52 bg-[#383668]"></div>
+            <div class="w-2 h-36 bg-[#B53255]"></div>
+          </div>
+          <h2>Mon</h2>
+        </div>
+        <div class="relative">
+          <div class="absolute -top-[8.75rem] left-1/2 -translate-x-1/2 flex items-end gap-1">
+            <div class="w-2 h-28 bg-[#383668]"></div>
+            <div class="w-2 h-32 bg-[#B53255]"></div>
+          </div>
+          <h2>Tue</h2>
+        </div>
+        <div class="relative">
+          <div class="absolute -top-[16.75rem] left-1/2 -translate-x-1/2 flex items-end gap-1">
+            <div class="w-2 h-64 bg-[#383668]"></div>
+            <div class="w-2 h-52 bg-[#B53255]"></div>
+          </div>
+          <h2>Wed</h2>
+        </div>
+        <div class="relative">
+          <div class="absolute -top-[15.75rem] left-1/2 -translate-x-1/2 flex items-end gap-1">
+            <div class="w-2 h-60 bg-[#383668]"></div>
+            <div class="w-2 h-44 bg-[#B53255]"></div>
+          </div>
+          <h2>Thu</h2>
+        </div>
+        <div class="relative">
+          <div class="absolute -top-[18.75rem] left-1/2 -translate-x-1/2 flex items-end gap-1">
+            <div class="w-2 h-72 bg-[#383668]"></div>
+            <div class="w-2 h-[16.5rem] bg-[#B53255]"></div>
+          </div>
+          <h2>Fri</h2>
+        </div>
+        <div class="relative">
+          <div class="absolute -top-[14.75rem] left-1/2 -translate-x-1/2 flex items-end gap-1">
+            <div class="w-2 h-56 bg-[#383668]"></div>
+            <div class="w-2 h-36 bg-[#B53255]"></div>
+          </div>
+          <h2>Sat</h2>
+        </div>
+        <div class="relative">
+          <div class="absolute -top-[13.75rem] left-1/2 -translate-x-1/2 flex items-end gap-1">
+            <div class="w-2 h-24 bg-[#383668]"></div>
+            <div class="w-2 h-52 bg-[#B53255]"></div>
+          </div>
+          <h2>Sun</h2>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <button class="border-2 border-black px-6 py-2 font-bold duration-300 hover:bg-black hover:text-white">View
+        Details</button>
+    </footer>
+  </div>
+</body>
+
+</html>
