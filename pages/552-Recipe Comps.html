@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="flex justify-center items-center gap-8 h-screen bg-[#F2E9E7] -rotate-[20deg] translate-y-1/2 scale-75">
+  <div class="flex flex-col justify-center items-end gap-8">
+    <section id="data" class="flex justify-center items-center gap-4 p-8 bg-white rounded-xl shadow-xl">
+      <div class="flex items-center gap-1">
+        <svg class="icon" style="width: 1.5em;height: 1.5em;vertical-align: middle;fill: currentColor;overflow: hidden;"
+          viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M512 192C332.8 192 192 332.8 192 512s140.8 320 320 320 320-140.8 320-320S691.2 192 512 192zM512 768c-140.8 0-256-115.2-256-256s115.2-256 256-256 256 115.2 256 256S652.8 768 512 768z">
+          </path>
+          <path
+            d="M544 499.2 544 320c0-19.2-12.8-32-32-32S480 300.8 480 320l0 192c0 6.4 6.4 19.2 6.4 25.6l102.4 102.4c6.4 6.4 12.8 6.4 25.6 6.4s19.2 0 25.6-6.4c12.8-12.8 12.8-32 0-44.8L544 499.2z">
+          </path>
+          <path
+            d="M364.8 192C364.8 185.6 358.4 179.2 358.4 172.8l0 0C320 140.8 256 140.8 217.6 172.8L172.8 217.6C140.8 256 140.8 320 172.8 358.4 179.2 358.4 185.6 364.8 192 364.8 224 288 288 224 364.8 192z">
+          </path>
+          <path
+            d="M851.2 217.6l-44.8-44.8c-38.4-38.4-96-38.4-134.4 0-6.4 6.4-6.4 12.8-12.8 19.2 76.8 38.4 140.8 96 172.8 172.8 6.4-6.4 12.8-6.4 19.2-12.8C883.2 320 883.2 256 851.2 217.6z">
+          </path>
+          <path
+            d="M262.4 780.8l-25.6 25.6c-12.8 12.8-12.8 32 0 44.8 6.4 6.4 12.8 6.4 25.6 6.4s19.2 0 25.6-6.4l25.6-25.6c12.8-12.8 12.8-32 0-44.8S275.2 768 262.4 780.8z">
+          </path>
+          <path
+            d="M761.6 780.8c-12.8-12.8-32-12.8-44.8 0s-12.8 32 0 44.8l25.6 25.6c6.4 6.4 12.8 6.4 25.6 6.4s19.2 0 25.6-6.4c12.8-12.8 12.8-32 0-44.8L761.6 780.8z">
+          </path>
+        </svg>
+        <span>30 min</span>
+      </div>
+      <div class="flex items-center gap-1">
+        <svg class="icon" style="width: 1.3em;height: 1.3em;vertical-align: middle;fill: currentColor;overflow: hidden;"
+          viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M500.32 59.84a8 8 0 0 1 8 6.4v352a89.6 89.6 0 0 0 89.6 89.6h350.4a8.16 8.16 0 0 1 8.16 8.16v12.8A448 448 0 1 1 487.04 60.32h11.52zM441.44 132.8l-5.92 1.12a380.96 380.96 0 1 0 446.88 448l1.12-6.24H598.24a156.96 156.96 0 0 1-156.8-151.84V132.8z m142.56-66.56l8.64 1.6 6.56 1.28h2.72a448 448 0 0 1 346.08 350.56l2.08 11.36a8.32 8.32 0 0 1-6.72 9.44H620.64a44.96 44.96 0 0 1-44.8-41.6V74.4a8.16 8.16 0 0 1 8.16-8.16z m59.2 89.6a4.48 4.48 0 0 0 0 1.44v212a4.16 4.16 0 0 0 4 4.16h211.84a4.16 4.16 0 0 0 4.16-4.16 4.64 4.64 0 0 0 0-1.44 382.72 382.72 0 0 0-214.4-214.4 4.16 4.16 0 0 0-5.28 2.4z">
+          </path>
+        </svg>
+        <span>6 servings</span>
+      </div>
+      <div class="flex items-center gap-1">
+        <svg class="icon" style="width: 1.3em;height: 1.3em;vertical-align: middle;fill: currentColor;overflow: hidden;"
+          viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M341.333333 938.666667H128a42.666667 42.666667 0 0 1-42.666667-42.666667V405.333333a42.666667 42.666667 0 0 1 42.666667-42.666666h213.333333V128a42.666667 42.666667 0 0 1 42.666667-42.666667h256a42.666667 42.666667 0 0 1 42.666667 42.666667v405.333333h213.333333a42.666667 42.666667 0 0 1 42.56 39.466667L938.666667 576v320a42.666667 42.666667 0 0 1-39.466667 42.56L896 938.666667H341.333333z m0-512H149.333333v448h192V426.666667z m533.333334 170.666666h-192v277.333334h192V597.333333zM618.666667 149.333333H405.333333v725.333334h213.333334V149.333333z">
+          </path>
+        </svg>
+        <span>210 cals</span>
+      </div>
+    </section>
+    <section id="detail"
+      class="relative flex justify-center gap-4 pl-4 pr-16 py-4 w-[36rem] bg-white rounded-xl shadow-xl">
+      <button id="like" data-isLiked="0" class="absolute top-4 right-4 p-1 border rounded-full">
+        <svg class="icon" style="width: 1.5em;height: 1.5em;vertical-align: middle;fill: currentColor;overflow: hidden;"
+          viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M523.733333 841.024l33.173334-32.576 99.690666-97.813333c70.976-69.632 120.32-117.973333 138.709334-135.893334 59.008-57.514667 93.248-121.28 99.626666-184.234666 6.250667-61.44-15.488-119.744-61.589333-164.672-44.992-43.84-98.88-61.909333-157.034667-52.906667-49.365333 7.616-101.034667 34.624-150.016 78.848a21.333333 21.333333 0 0 1-28.586666 0c-48.981333-44.224-100.650667-71.232-150.016-78.869333-58.154667-8.96-112.042667 9.088-157.034667 52.928-46.101333 44.928-67.84 103.210667-61.610667 164.693333 6.4 62.933333 40.64 126.72 99.648 184.213333a100207.573333 100207.573333 0 0 1 145.92 142.826667l24.256 23.765333L512 852.522667l11.733333-11.498667z m-11.733333 11.52l-1.493333 1.429333A2.133333 2.133333 0 0 1 512 853.333333c0.512 0 1.045333 0.213333 1.493333 0.64l-1.493333-1.450666z m157.781333-721.792c71.637333-11.093333 138.901333 11.477333 193.344 64.533333 55.317333 53.930667 81.834667 124.992 74.282667 199.530667-7.466667 73.642667-46.549333 146.368-112.32 210.474667-18.346667 17.898667-67.669333 66.218667-138.453333 135.637333-31.829333 31.232-65.706667 64.448-99.84 97.984L553.6 871.466667l-13.184 12.949333a40.554667 40.554667 0 0 1-56.832 0l-114.602667-112.64-24.213333-23.722667a677626.346667 677626.346667 0 0 0-145.856-142.762666C133.141333 541.184 94.08 468.48 86.613333 394.816c-7.552-74.538667 18.944-145.6 74.282667-199.530667 54.442667-53.056 121.706667-75.605333 193.344-64.533333 53.162667 8.213333 107.093333 34.688 157.781333 76.949333 50.709333-42.24 104.618667-68.736 157.781334-76.949333z">
+          </path>
+        </svg>
+      </button>
+      <img src="https://images.unsplash.com/photo-1505253716362-afaea1d3d1af" alt="photo"
+        class="w-48 aspect-square object-cover rounded-lg" />
+      <div class="pt-4">
+        <h1 class="text-2xl font-bold mb-2">Spinach Salad</h1>
+        <p class="w-72 text-sm mb-2">Simple recipe for a weeknight or a celebration table. I promise it is one of the
+          easiest salads you will ever make!</p>
+        <div class="flex items-center gap-1 text-[#F65654]">
+          <svg class="icon" style="width: 1em;height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;"
+            viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M749.226667 896a42.666667 42.666667 0 0 1-19.626667-4.693333L512 777.386667l-217.6 113.92a42.666667 42.666667 0 0 1-61.866667-45.226667l42.666667-240.213333-175.786667-170.666667a42.666667 42.666667 0 0 1-10.666666-42.666667 42.666667 42.666667 0 0 1 34.56-29.013333l243.2-35.413333 107.093333-218.88a42.666667 42.666667 0 0 1 76.8 0l108.373333 218.453333 243.2 35.413333a42.666667 42.666667 0 0 1 34.56 29.013334 42.666667 42.666667 0 0 1-10.666666 42.666666l-175.786667 170.666667 42.666667 240.213333a42.666667 42.666667 0 0 1-17.066667 42.666667 42.666667 42.666667 0 0 1-26.453333 7.68z">
+            </path>
+          </svg>
+          <svg class="icon" style="width: 1em;height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;"
+            viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M749.226667 896a42.666667 42.666667 0 0 1-19.626667-4.693333L512 777.386667l-217.6 113.92a42.666667 42.666667 0 0 1-61.866667-45.226667l42.666667-240.213333-175.786667-170.666667a42.666667 42.666667 0 0 1-10.666666-42.666667 42.666667 42.666667 0 0 1 34.56-29.013333l243.2-35.413333 107.093333-218.88a42.666667 42.666667 0 0 1 76.8 0l108.373333 218.453333 243.2 35.413333a42.666667 42.666667 0 0 1 34.56 29.013334 42.666667 42.666667 0 0 1-10.666666 42.666666l-175.786667 170.666667 42.666667 240.213333a42.666667 42.666667 0 0 1-17.066667 42.666667 42.666667 42.666667 0 0 1-26.453333 7.68z">
+            </path>
+          </svg>
+          <svg class="icon" style="width: 1em;height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;"
+            viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M749.226667 896a42.666667 42.666667 0 0 1-19.626667-4.693333L512 777.386667l-217.6 113.92a42.666667 42.666667 0 0 1-61.866667-45.226667l42.666667-240.213333-175.786667-170.666667a42.666667 42.666667 0 0 1-10.666666-42.666667 42.666667 42.666667 0 0 1 34.56-29.013333l243.2-35.413333 107.093333-218.88a42.666667 42.666667 0 0 1 76.8 0l108.373333 218.453333 243.2 35.413333a42.666667 42.666667 0 0 1 34.56 29.013334 42.666667 42.666667 0 0 1-10.666666 42.666666l-175.786667 170.666667 42.666667 240.213333a42.666667 42.666667 0 0 1-17.066667 42.666667 42.666667 42.666667 0 0 1-26.453333 7.68z">
+            </path>
+          </svg>
+          <svg class="icon" style="width: 1em;height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;"
+            viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M749.226667 896a42.666667 42.666667 0 0 1-19.626667-4.693333L512 777.386667l-217.6 113.92a42.666667 42.666667 0 0 1-61.866667-45.226667l42.666667-240.213333-175.786667-170.666667a42.666667 42.666667 0 0 1-10.666666-42.666667 42.666667 42.666667 0 0 1 34.56-29.013333l243.2-35.413333 107.093333-218.88a42.666667 42.666667 0 0 1 76.8 0l108.373333 218.453333 243.2 35.413333a42.666667 42.666667 0 0 1 34.56 29.013334 42.666667 42.666667 0 0 1-10.666666 42.666666l-175.786667 170.666667 42.666667 240.213333a42.666667 42.666667 0 0 1-17.066667 42.666667 42.666667 42.666667 0 0 1-26.453333 7.68z">
+            </path>
+          </svg>
+          <svg class="icon" style="width: 1em;height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;"
+            viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M749.226667 896a42.666667 42.666667 0 0 1-19.626667-4.693333L512 777.386667l-217.6 113.92a42.666667 42.666667 0 0 1-61.866667-45.226667l42.666667-240.213333-175.786667-170.666667a42.666667 42.666667 0 0 1-10.666666-42.666667 42.666667 42.666667 0 0 1 34.56-29.013333l243.2-35.413333 107.093333-218.88a42.666667 42.666667 0 0 1 76.8 0l108.373333 218.453333 243.2 35.413333a42.666667 42.666667 0 0 1 34.56 29.013334 42.666667 42.666667 0 0 1-10.666666 42.666666l-175.786667 170.666667 42.666667 240.213333a42.666667 42.666667 0 0 1-17.066667 42.666667 42.666667 42.666667 0 0 1-26.453333 7.68z">
+            </path>
+          </svg>
+          <span class="text-gray-500 text-sm">14K</span>
+        </div>
+      </div>
+    </section>
+    <section id="difficulty" class="p-8 bg-white rounded-xl shadow-xl">
+      <h3 class="text-lg font-bold mb-4">Difficulty</h3>
+      <ul class="flex justify-center items-center gap-2">
+        <li>
+          <button class="px-4 py-2 bg-[#FBF2EE] border border-[#F1EAEB] rounded-full">Easy</button>
+        </li>
+        <li>
+          <button
+            class="px-4 py-2 bg-[#F55A4F] text-white shadow-xl border border-[#F1EAEB] rounded-full">Medium</button>
+        </li>
+        <li>
+          <button class="px-4 py-2 bg-[#FBF2EE] border border-[#F1EAEB] rounded-full">Hard</button>
+        </li>
+      </ul>
+    </section>
+  </div>
+  <div class="flex flex-col justify-center items-start gap-8">
+    <section id="list" class="relative flex justify-center items-start gap-2 px-10 py-8 bg-white rounded-xl shadow-xl">
+      <button
+        class="absolute top-1/2 -translate-y-1/2 left-2 text-[#F65654] bg-[#F65654] bg-opacity-10 p-1 rounded-full">
+        <svg class="icon"
+          style="width: 1.25em;height: 1.25em;vertical-align: middle;fill: currentColor;overflow: hidden;"
+          viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M685.226667 168.106667a64 64 0 0 1 0 90.453333l-256.426667 256.469333 256.426667 256.426667a64 64 0 0 1-90.453334 90.538667l-301.738666-301.696a64 64 0 0 1 0-90.538667l301.696-301.653333a64 64 0 0 1 90.538666 0z">
+          </path>
+        </svg>
+      </button>
+      <button
+        class="absolute top-1/2 -translate-y-1/2 right-2 text-[#F65654] bg-[#F65654] bg-opacity-10 p-1 rounded-full">
+        <svg class="icon"
+          style="width: 1.25em;height: 1.25em;vertical-align: middle;fill: currentColor;overflow: hidden;"
+          viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M346.282667 854.442667a53.333333 53.333333 0 0 1 0-75.434667l263.978666-263.978667-263.978666-263.978666a53.333333 53.333333 0 1 1 75.434666-75.434667l301.696 301.696a53.333333 53.333333 0 0 1 0 75.434667l-301.696 301.696a53.333333 53.333333 0 0 1-75.434666 0z">
+          </path>
+        </svg>
+      </button>
+      <div class="flex flex-col justify-center items-center gap-4 w-[11rem] px-2 py-6 border border-white rounded-xl">
+        <img src="https://plus.unsplash.com/premium_photo-1664392002995-4ee10b7f91e5" alt="Crispy Crouton Salad"
+          class="w-16 aspect-square object-cover object-center rounded-full" />
+        <span class="text-center">Crispy Crouton Salad</span>
+      </div>
+      <div
+        class="flex flex-col justify-center items-center gap-4 w-[11rem] px-2 py-6 border border-[#F1EAEB] rounded-xl">
+        <img src="https://images.unsplash.com/photo-1497445702960-c21c96af4c68" alt="Pancakes with yogurt"
+          class="w-16 aspect-square object-cover object-center rounded-full" />
+        <span class="text-center">Pancakes with yogurt</span>
+      </div>
+      <div class="flex flex-col justify-center items-center gap-4 w-[11rem] px-2 py-6 border border-white rounded-xl">
+        <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b" alt="Crispy and Creamy Doughnuts"
+          class="w-16 aspect-square object-cover object-center rounded-full" />
+        <span class="text-center">Crispy and Creamy Doughnuts</span>
+      </div>
+      <div class="flex flex-col justify-center items-center gap-4 w-[11rem] px-2 py-6 border border-white rounded-xl">
+        <img src="https://plus.unsplash.com/premium_photo-1664392002995-4ee10b7f91e5" alt="Perfect xxx"
+          class="w-16 aspect-square object-cover object-center rounded-full" />
+        <span class="text-center">Perfect xxx</span>
+      </div>
+    </section>
+    <div class="flex items-start gap-8">
+      <section id="subscribe"
+        class="flex flex-col justify-center items-center bg-white rounded-xl shadow-xl overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd" alt="photo"
+          class="w-full h-36 object-cover object-bottom" />
+        <div class="text-center py-6 px-4">
+          <p class="uppercase mb-2">subscribe today</p>
+          <h1 class="text-2xl font-bold mb-4">Never miss a recipe</h1>
+          <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Your email address"
+            class="w-full p-4 border border-[#F1EAEB] mb-4 bg-transparent rounded-lg outline-none" />
+          <button
+            class="w-full py-4 mb-8 bg-[#F55A4F] text-white text-lg rounded-xl shadow-xl outline-none">Subscribe</button>
+          <p class="text-sm">We won't send you spam.<br />Unsubscribe at any time.</p>
+        </div>
+      </section>
+      <section id="search" class="w-96 p-8 bg-[#F55A4F] rounded-xl shadow-xl">
+        <h1 class="text-white text-xl mb-2">Search for recipe</h1>
+        <div class="flex justify-start items-center p-2 bg-white text-gray-500 rounded-xl">
+          <svg class="icon"
+            style="width: 1.5em;height: 1.5em;vertical-align: middle;fill: currentColor;overflow: hidden;"
+            viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M947.403484 889.47719 739.332589 681.406295c23.302729-28.866445 42.130539-60.786435 56.137555-95.327112 18.479887-45.568848 27.849278-93.707219 27.849278-143.078673 0-49.371454-9.369392-97.509824-27.849278-143.077649-19.139919-47.199998-47.244001-89.531106-83.532485-125.81959s-78.619592-64.392566-125.81959-83.532485c-45.567825-18.478863-93.706195-27.848255-143.077649-27.848255s-97.509824 9.369392-143.078673 27.848255c-47.199998 19.139919-89.531106 47.244001-125.81959 83.532485-36.288484 36.288484-64.392566 78.620615-83.532485 125.81959-18.478863 45.568848-27.848255 93.707219-27.848255 143.077649 0 49.371454 9.369392 97.509824 27.848255 143.078673 19.139919 47.198975 47.244001 89.530083 83.532485 125.818567 36.287461 36.288484 78.619592 64.393589 125.81959 83.532485 45.568848 18.479887 93.707219 27.849278 143.078673 27.849278s97.509824-9.369392 143.077649-27.849278c34.541701-14.005992 66.461691-32.833803 95.328136-56.137555l208.070896 208.070896c7.993045 7.993045 18.467607 11.989055 28.943193 11.989055s20.951171-3.996011 28.943193-11.989055C963.388551 931.378509 963.388551 905.462257 947.403484 889.47719zM443.039395 741.415017c-79.709413 0-154.647149-31.04097-211.010855-87.403652-56.362682-56.362682-87.403652-131.301442-87.403652-211.010855 0-79.709413 31.039947-154.647149 87.403652-211.010855 56.363705-56.362682 131.301442-87.403652 211.010855-87.403652 79.709413 0 154.648173 31.039947 211.010855 87.403652 56.362682 56.363705 87.403652 131.301442 87.403652 211.010855 0 79.709413-31.04097 154.648173-87.403652 211.010855S522.748808 741.415017 443.039395 741.415017z">
+            </path>
+          </svg>
+          <input type="text" placeholder="Your em"
+            class="w-full p-2 bg-transparent outline-none placeholder:text-gray-500" />
+        </div>
+      </section>
+    </div>
+  </div>
+</body>
+
+<script>
+  const like = document.getElementById('like');
+  like.dataset.isLiked = 0
+  like.addEventListener("click", () => {
+    like.classList.toggle('text-red-500');
+    if (like.dataset.isLiked == 0) {
+      like.dataset.isLiked = 1
+      like.querySelector('path').setAttribute("d", "M669.781333 130.752c71.637333-11.093333 138.901333 11.477333 193.344 64.533333 55.317333 53.930667 81.834667 124.992 74.282667 199.530667-7.466667 73.642667-46.549333 146.368-112.32 210.474667-18.346667 17.898667-67.669333 66.218667-138.453333 135.637333-31.829333 31.232-65.706667 64.448-99.84 97.984L553.6 871.466667l-13.184 12.949333a40.554667 40.554667 0 0 1-56.832 0l-114.602667-112.64-24.213333-23.722667a677626.346667 677626.346667 0 0 0-145.856-142.762666C133.141333 541.184 94.08 468.48 86.613333 394.816c-7.552-74.538667 18.944-145.6 74.282667-199.530667 54.442667-53.056 121.706667-75.605333 193.344-64.533333 53.162667 8.213333 107.093333 34.688 157.781333 76.949333 50.709333-42.24 104.618667-68.736 157.781334-76.949333z")
+    } else {
+      like.dataset.isLiked = 0
+      like.querySelector('path').setAttribute("d", "M523.733333 841.024l33.173334-32.576 99.690666-97.813333c70.976-69.632 120.32-117.973333 138.709334-135.893334 59.008-57.514667 93.248-121.28 99.626666-184.234666 6.250667-61.44-15.488-119.744-61.589333-164.672-44.992-43.84-98.88-61.909333-157.034667-52.906667-49.365333 7.616-101.034667 34.624-150.016 78.848a21.333333 21.333333 0 0 1-28.586666 0c-48.981333-44.224-100.650667-71.232-150.016-78.869333-58.154667-8.96-112.042667 9.088-157.034667 52.928-46.101333 44.928-67.84 103.210667-61.610667 164.693333 6.4 62.933333 40.64 126.72 99.648 184.213333a100207.573333 100207.573333 0 0 1 145.92 142.826667l24.256 23.765333L512 852.522667l11.733333-11.498667z m-11.733333 11.52l-1.493333 1.429333A2.133333 2.133333 0 0 1 512 853.333333c0.512 0 1.045333 0.213333 1.493333 0.64l-1.493333-1.450666z m157.781333-721.792c71.637333-11.093333 138.901333 11.477333 193.344 64.533333 55.317333 53.930667 81.834667 124.992 74.282667 199.530667-7.466667 73.642667-46.549333 146.368-112.32 210.474667-18.346667 17.898667-67.669333 66.218667-138.453333 135.637333-31.829333 31.232-65.706667 64.448-99.84 97.984L553.6 871.466667l-13.184 12.949333a40.554667 40.554667 0 0 1-56.832 0l-114.602667-112.64-24.213333-23.722667a677626.346667 677626.346667 0 0 0-145.856-142.762666C133.141333 541.184 94.08 468.48 86.613333 394.816c-7.552-74.538667 18.944-145.6 74.282667-199.530667 54.442667-53.056 121.706667-75.605333 193.344-64.533333 53.162667 8.213333 107.093333 34.688 157.781333 76.949333 50.709333-42.24 104.618667-68.736 157.781334-76.949333z")
+    }
+  })
+</script>
+
+</html>
