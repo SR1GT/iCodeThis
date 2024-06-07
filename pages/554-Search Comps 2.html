@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="flex flex-col justify-center items-center gap-8 h-screen bg-[#F1F1F1]">
+  <section class="flex justify-center items-center gap-2 p-8 bg-[#363F4C] rounded-md ml-48">
+    <div class="relative">
+      <svg class="icon absolute top-1/2 left-2 -translate-y-1/2 text-gray-500"
+        style="width: 1.2em;height: 1.2em;vertical-align: middle;fill: currentColor;overflow: hidden;"
+        viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M922.666667 876.373333 702.677333 648.405333C805.290667 511.701333 796.245333 314.133333 675.008 188.501333 609.344 120.448 523.264 86.421333 437.205333 86.421333 351.146667 86.421333 265.066667 120.448 199.402667 188.501333 68.074667 324.608 68.074667 545.258667 199.402667 681.344 265.066667 749.397333 351.146667 783.424 437.205333 783.424 510.058667 783.424 582.762667 758.762667 643.221333 710.016L863.210667 937.984 922.666667 876.373333ZM258.858667 619.733333C160.512 517.824 160.512 352.021333 258.858667 250.112 306.496 200.746667 369.834667 173.546667 437.205333 173.546667 504.576 173.546667 567.914667 200.746667 615.552 250.112 713.898667 352.021333 713.898667 517.824 615.552 619.733333 567.914667 669.098667 504.576 696.298667 437.205333 696.298667 369.834667 696.298667 306.496 669.098667 258.858667 619.733333Z">
+        </path>
+      </svg>
+      <input type="text" placeholder="Search Keyword" class="text-sm pl-8 pr-2 py-2 bg-white outline-[#FE9562]" />
+    </div>
+    <div class="relative">
+      <svg class="icon absolute top-1/2 left-2 -translate-y-1/2 text-gray-500"
+        style="width: 1.5em;height: 1.5em;vertical-align: middle;fill: currentColor;overflow: hidden;"
+        viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M727.04 240.64c-117.76-117.76-312.32-117.76-435.2 0-117.76 117.76-117.76 312.32 0 435.2l179.2 179.2c15.36 10.24 25.6 15.36 40.96 15.36s25.6-5.12 35.84-15.36l179.2-179.2c122.88-117.76 122.88-312.32 0-435.2zM691.2 640L512 819.2 332.8 640c-97.28-97.28-97.28-261.12 0-363.52C378.88 230.4 445.44 204.8 512 204.8s133.12 25.6 179.2 76.8c102.4 97.28 102.4 256 0 358.4zM512 307.2c-87.04 0-153.6 66.56-153.6 153.6S424.96 614.4 512 614.4s153.6-66.56 153.6-153.6S599.04 307.2 512 307.2z m0 256c-56.32 0-102.4-46.08-102.4-102.4S455.68 358.4 512 358.4s102.4 46.08 102.4 102.4S568.32 563.2 512 563.2z">
+        </path>
+      </svg>
+      <input type="text" value="Onl" placeholder="Search Keyword"
+        class="text-sm pl-8 pr-2 py-2 bg-white outline-[#FE9562]" autofocus />
+      <div class="absolute flex flex-col justify-center items-start w-72 bg-white p-2 mt-2 rounded-sm shadow-lg">
+        <div class="w-full flex items-center gap-1 py-1">
+          <svg class="icon text-gray-500"
+            style="width: 1.5em;height: 1.5em;vertical-align: middle;fill: currentColor;overflow: hidden;"
+            viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M727.04 240.64c-117.76-117.76-312.32-117.76-435.2 0-117.76 117.76-117.76 312.32 0 435.2l179.2 179.2c15.36 10.24 25.6 15.36 40.96 15.36s25.6-5.12 35.84-15.36l179.2-179.2c122.88-117.76 122.88-312.32 0-435.2zM691.2 640L512 819.2 332.8 640c-97.28-97.28-97.28-261.12 0-363.52C378.88 230.4 445.44 204.8 512 204.8s133.12 25.6 179.2 76.8c102.4 97.28 102.4 256 0 358.4zM512 307.2c-87.04 0-153.6 66.56-153.6 153.6S424.96 614.4 512 614.4s153.6-66.56 153.6-153.6S599.04 307.2 512 307.2z m0 256c-56.32 0-102.4-46.08-102.4-102.4S455.68 358.4 512 358.4s102.4 46.08 102.4 102.4S568.32 563.2 512 563.2z">
+            </path>
+          </svg>
+          <p class="text-sm"><strong>Onl</strong>ine jobs in Bergen</p>
+        </div>
+        <div class="w-full flex items-center gap-1 py-1 bg-[#EEF0F2]">
+          <svg class="icon text-gray-500"
+            style="width: 1.5em;height: 1.5em;vertical-align: middle;fill: currentColor;overflow: hidden;"
+            viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M727.04 240.64c-117.76-117.76-312.32-117.76-435.2 0-117.76 117.76-117.76 312.32 0 435.2l179.2 179.2c15.36 10.24 25.6 15.36 40.96 15.36s25.6-5.12 35.84-15.36l179.2-179.2c122.88-117.76 122.88-312.32 0-435.2zM691.2 640L512 819.2 332.8 640c-97.28-97.28-97.28-261.12 0-363.52C378.88 230.4 445.44 204.8 512 204.8s133.12 25.6 179.2 76.8c102.4 97.28 102.4 256 0 358.4zM512 307.2c-87.04 0-153.6 66.56-153.6 153.6S424.96 614.4 512 614.4s153.6-66.56 153.6-153.6S599.04 307.2 512 307.2z m0 256c-56.32 0-102.4-46.08-102.4-102.4S455.68 358.4 512 358.4s102.4 46.08 102.4 102.4S568.32 563.2 512 563.2z">
+            </path>
+          </svg>
+          <p class="text-sm"><strong>Onl</strong>ine jobs in Stavanger</p>
+        </div>
+        <div class="w-full flex items-center gap-1 py-1">
+          <svg class="icon text-gray-500"
+            style="width: 1.5em;height: 1.5em;vertical-align: middle;fill: currentColor;overflow: hidden;"
+            viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M727.04 240.64c-117.76-117.76-312.32-117.76-435.2 0-117.76 117.76-117.76 312.32 0 435.2l179.2 179.2c15.36 10.24 25.6 15.36 40.96 15.36s25.6-5.12 35.84-15.36l179.2-179.2c122.88-117.76 122.88-312.32 0-435.2zM691.2 640L512 819.2 332.8 640c-97.28-97.28-97.28-261.12 0-363.52C378.88 230.4 445.44 204.8 512 204.8s133.12 25.6 179.2 76.8c102.4 97.28 102.4 256 0 358.4zM512 307.2c-87.04 0-153.6 66.56-153.6 153.6S424.96 614.4 512 614.4s153.6-66.56 153.6-153.6S599.04 307.2 512 307.2z m0 256c-56.32 0-102.4-46.08-102.4-102.4S455.68 358.4 512 358.4s102.4 46.08 102.4 102.4S568.32 563.2 512 563.2z">
+            </path>
+          </svg>
+          <p class="text-sm"><strong>Onl</strong>ine jobs in Tromso</p>
+        </div>
+        <div class="w-full flex items-center gap-1 py-1">
+          <svg class="icon text-gray-500"
+            style="width: 1.5em;height: 1.5em;vertical-align: middle;fill: currentColor;overflow: hidden;"
+            viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M727.04 240.64c-117.76-117.76-312.32-117.76-435.2 0-117.76 117.76-117.76 312.32 0 435.2l179.2 179.2c15.36 10.24 25.6 15.36 40.96 15.36s25.6-5.12 35.84-15.36l179.2-179.2c122.88-117.76 122.88-312.32 0-435.2zM691.2 640L512 819.2 332.8 640c-97.28-97.28-97.28-261.12 0-363.52C378.88 230.4 445.44 204.8 512 204.8s133.12 25.6 179.2 76.8c102.4 97.28 102.4 256 0 358.4zM512 307.2c-87.04 0-153.6 66.56-153.6 153.6S424.96 614.4 512 614.4s153.6-66.56 153.6-153.6S599.04 307.2 512 307.2z m0 256c-56.32 0-102.4-46.08-102.4-102.4S455.68 358.4 512 358.4s102.4 46.08 102.4 102.4S568.32 563.2 512 563.2z">
+            </path>
+          </svg>
+          <p class="text-sm"><strong>Onl</strong>ine jobs in Oslo</p>
+        </div>
+      </div>
+    </div>
+    <button class="w-32 h-full border border-[#FE9562] bg-[#FE9562] text-white text-center rounded-sm">Search</button>
+  </section>
+  <div class="flex justify-center items-start gap-20">
+    <section class="px-8 py-16 bg-[#363F4C] rounded-md">
+      <h1 class="text-white text-xl text-center mb-4">Need to hire a freelancer?</h1>
+      <p class="text-white text-sm text-center mb-4">Sign up, type in what you need and<br />receive free quotes in
+        seconds.</p>
+      <input type="text" placeholder="What do you need done?"
+        class="w-full bg-white px-4 py-2 placeholder:text-sm rounded-sm mb-2" />
+      <button class="bg-[#FE9562] w-full py-2 text-center text-white rounded-sm">Post a Project</button>
+    </section>
+    <section class="p-8 bg-[#363F4C] rounded-md mt-48">
+      <h1 class="text-xl text-center text-white mb-6">What do you need?</h1>
+      <div class="flex justify-center items-center gap-2">
+        <button class="px-6 py-2 border border-[#FE9562] bg-[#FE9562] text-white text-center rounded-sm">I want to
+          hire</button>
+        <button class="px-6 py-2 border border-white bg-transparent text-white text-center rounded-sm">I want to
+          work</button>
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>
