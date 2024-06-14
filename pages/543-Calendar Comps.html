@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="relative flex justify-center items-center gap-24 h-screen bg-[#F5F3FF]">
+  <section class="p-8 bg-white rounded-md shadow-xl">
+    <div class="flex justify-between items-center w-full mb-8">
+      <h1 class="text-xl font-bold">October 2020</h1>
+      <div class="flex items-center">
+        <button class="outline-none duration-300 hover:opacity-85">
+          <svg class="icon" style="
+              width: 2em;
+              height: 2em;
+              vertical-align: middle;
+              fill: currentColor;
+              overflow: hidden;
+            " viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M639.786667 359.04l-165.546667 165.546667 165.546667 165.546666a42.496 42.496 0 1 1-60.16 60.16l-195.84-195.84a42.496 42.496 0 0 1 0-60.16l195.84-195.84a42.496 42.496 0 0 1 60.16 0c16.213333 16.64 16.64 43.946667 0 60.586667z">
+            </path>
+          </svg>
+        </button>
+        <button class="outline-none duration-300 hover:opacity-85">
+          <svg class="icon" style="
+              width: 2em;
+              height: 2em;
+              vertical-align: middle;
+              fill: currentColor;
+              overflow: hidden;
+            " viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M396.373333 346.453333L561.92 512l-165.546667 165.546667a42.496 42.496 0 1 0 60.16 60.16l195.84-195.84a42.496 42.496 0 0 0 0-60.16L456.533333 285.866667a42.496 42.496 0 0 0-60.16 0c-16.213333 16.64-16.64 43.946667 0 60.586666z">
+            </path>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class="grid grid-cols-7 items-center gap-4 text-center">
+      <span class="text-sm font-bold">Mon</span>
+      <span class="text-sm font-bold">Tue</span>
+      <span class="text-sm font-bold">Wed</span>
+      <span class="text-sm font-bold">Thu</span>
+      <span class="text-sm font-bold">Fri</span>
+      <span class="text-sm font-bold">Sat</span>
+      <span class="text-sm font-bold">Sun</span>
+      <span class="text-gray-400">28</span>
+      <span class="text-gray-400">29</span>
+      <span class="text-gray-400">30</span>
+      <span>1</span>
+      <span>2</span>
+      <span class="p-1 bg-[#FF4A72] text-white aspect-square rounded-full">3</span>
+      <span>4</span>
+      <span>5</span>
+      <span>6</span>
+      <span>7</span>
+      <span>8</span>
+      <span>9</span>
+      <span>10</span>
+      <span>11</span>
+      <span class="p-1 bg-[#FC8D1A] text-white aspect-square rounded-full">12</span>
+      <span>13</span>
+      <span>14</span>
+      <span>15</span>
+      <span>16</span>
+      <span>17</span>
+      <span>18</span>
+      <span>19</span>
+      <span>20</span>
+      <span>21</span>
+      <span id="oct22" class="p-1 bg-[#734AFF] text-white aspect-square rounded-full cursor-pointer">22</span>
+      <span>23</span>
+      <span>24</span>
+      <span>25</span>
+      <span>26</span>
+      <span>27</span>
+      <span>28</span>
+      <span>29</span>
+      <span>30</span>
+      <span>31</span>
+      <span class="text-gray-400">1</span>
+    </div>
+  </section>
+  <section class="flex flex-col gap-1 px-8 py-12 bg-white shadow-xl">
+    <button class="px-8 py-2 rounded-full">Today</button>
+    <button class="px-8 py-2 rounded-full text-white bg-[#734AFE]">This week</button>
+    <button class="px-8 py-2 rounded-full">Next week</button>
+  </section>
+  <section class="absolute flex justify-center items-center w-screen h-screen bg-black bg-opacity-80 z-0 hidden">
+    <div class="p-8 bg-white rounded-md shadow-xl">
+      <div class="flex items-center w-full mb-8 gap-4">
+        <div class="flex flex-col items-center">
+          <span class="text-xs font-bold">Oct</span>
+          <span class="text-xl">22</span>
+        </div>
+        <div class="border-l h-24"></div>
+        <div class="flex flex-col items-start">
+          <h1 class="text-xl font-bold w-44 mb-2">Y Oslo pa Damsgard!</h1>
+          <p class="text-gray-500 text-xs">9:00am - 6:00pm</p>
+        </div>
+      </div>
+      <div class="flex items-center gap-1">
+        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80" alt="image"
+          class="w-10 aspect-square rounded-full object-cover object-center" />
+        <img src="https://images.unsplash.com/photo-1540569014015-19a7be504e3a" alt="image"
+          class="w-10 aspect-square rounded-full object-cover object-center" />
+        <img src="https://images.unsplash.com/photo-1599566150163-29194dcaad36" alt="image"
+          class="w-10 aspect-square rounded-full object-cover object-center" />
+        <div class="flex justify-center items-center w-10 aspect-square border border-[#754AFE] rounded-full">
+          <span class="text-[#754AFE] text-sm font-bold">+21</span>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+
+<script>
+  const oct22 = document.getElementById('oct22');
+  oct22.addEventListener('click', () => {
+    document.querySelectorAll('section')[2].classList.remove('hidden')
+    setTimeout(() => {
+      document.querySelectorAll('section')[2].classList.add('hidden')
+    }, 3000)
+  })
+</script>
+
+</html>
