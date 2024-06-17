@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="flex flex-col justify-center items-center gap-8 h-screen">
+  <div class="p-12 bg-white rounded-xl shadow-xl">
+    <header class="flex justify-between items-center w-full mb-8">
+      <h1 class="text-xl font-bold">Goals</h1>
+      <select class="p-1 bg-transparent border text-xs cursor-pointer outline-none">
+        <option>Today</option>
+        <option>This Week</option>
+        <option selected>This Month</option>
+      </select>
+    </header>
+    <div class="w-96">
+      <div class="flex justify-between items-center mb-2">
+        <span class="text-xs font-bold">Direct</span>
+        <span class="text-xs font-bold">3,183</span>
+      </div>
+      <div class="w-full h-2 bg-[#F6F8FC] rounded-full mb-4">
+        <div class="w-2/5 h-2 bg-[#3DBFD6] rounded-full"></div>
+      </div>
+      <div class="flex justify-between items-center mb-2">
+        <span class="text-xs font-bold">Organic</span>
+        <span class="text-xs font-bold">3,846</span>
+      </div>
+      <div class="w-full h-2 bg-[#F6F8FC] rounded-full mb-4">
+        <div class="w-3/5 h-2 bg-[#101631] rounded-full"></div>
+      </div>
+      <div class="flex justify-between items-center mb-2">
+        <span class="text-xs font-bold">Social</span>
+        <span class="text-xs font-bold">1,058</span>
+      </div>
+      <div class="w-full h-2 bg-[#F6F8FC] rounded-full mb-4">
+        <div class="w-1/5 h-2 bg-[#8434E6] rounded-full"></div>
+      </div>
+      <div class="flex justify-between items-center mb-2">
+        <span class="text-xs font-bold">Referral</span>
+        <span class="text-xs font-bold">174</span>
+      </div>
+      <div class="w-full h-2 bg-[#F6F8FC] rounded-full">
+        <div class="w-1/6 h-2 bg-[#404AED] rounded-full"></div>
+      </div>
+    </div>
+  </div>
+  <div class="p-8 bg-white rounded-xl shadow-xl">
+    <header class="flex justify-between items-center w-full">
+      <h1 class="text-xl font-bold">Recycled</h1>
+      <button class="p-1 bg-transparent border border-gray-200 text-gray-400 rounded-md outline-none">
+        <svg class="icon"
+          style="width: 0.75em;height: 0.75em;vertical-align: middle;fill: currentColor;overflow: hidden;"
+          viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M122.434783 512m-122.434783 0a5.5 5.5 0 1 0 244.869565 0 5.5 5.5 0 1 0-244.869565 0ZM512 512m-122.434783 0a5.5 5.5 0 1 0 244.869565 0 5.5 5.5 0 1 0-244.869565 0ZM901.565217 512m-122.434783 0a5.5 5.5 0 1 0 244.869565 0 5.5 5.5 0 1 0-244.869565 0Z">
+          </path>
+        </svg>
+      </button>
+    </header>
+    <main class="flex items-center gap-8 my-8">
+      <div class="relative border-[20px] p-16 rounded-full">
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center">
+          <span class="text-xs text-gray-500">Total</span>
+          <span class="text-sm font-bold">$47.1K</span>
+        </div>
+      </div>
+      <ul>
+        <li class="flex justify-between items-center gap-4 text-xs mb-1">
+          <div class="flex items-center gap-1 text-gray-500">
+            <div class="w-2 aspect-square bg-[#121731] rounded-full"></div>
+            <span>Text</span>
+          </div>
+          <span class="font-bold">32%</span>
+        </li>
+        <li class="flex justify-between items-center gap-4 text-xs mb-1">
+          <div class="flex items-center gap-1 text-gray-500">
+            <div class="w-2 aspect-square bg-[#FE863D] rounded-full"></div>
+            <span>Images</span>
+          </div>
+          <span class="font-bold">25%</span>
+        </li>
+        <li class="flex justify-between items-center gap-4 text-xs mb-1">
+          <div class="flex items-center gap-1 text-gray-500">
+            <div class="w-2 aspect-square bg-[#FBCA3A] rounded-full"></div>
+            <span>Documents</span>
+          </div>
+          <span class="font-bold">22%</span>
+        </li>
+        <li class="flex justify-between items-center gap-4 text-xs">
+          <div class="flex items-center gap-1 text-gray-500">
+            <div class="w-2 aspect-square bg-[#E92E66] rounded-full"></div>
+            <span>Videos</span>
+          </div>
+          <span class="font-bold">11%</span>
+        </li>
+      </ul>
+    </main>
+    <button
+      class="flex justify-center items-center gap-1 py-2 bg-transparent text-sm text-gray-500 border border-gray-200 w-full">
+      <span>Read full report</span>
+      <svg class="icon" style="width: 0.75em;height: 0.75em;vertical-align: middle;fill: currentColor;overflow: hidden;"
+        viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" p-id="4328">
+        <path
+          d="M769.792 476.032 416.48 125.92c-18.848-18.656-49.216-18.528-67.872 0.32-18.656 18.816-18.528 49.216 0.32 67.872l319.456 316.576-318.176 321.056c-18.656 18.816-18.528 49.216 0.32 67.872 9.344 9.28 21.568 13.92 33.792 13.92 12.352 0 24.704-4.736 34.08-14.208l350.112-353.312c0.512-0.512 0.672-1.248 1.184-1.792 0.128-0.128 0.288-0.16 0.416-0.288C788.736 525.088 788.64 494.688 769.792 476.032z">
+        </path>
+      </svg>
+    </button>
+  </div>
+</body>
+
+</html>
