@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="flex justify-center items-center gap-8 h-screen bg-[#FED1CE]">
+  <section class="bg-[#20183B] text-white p-6 rounded-xl shadow-xl">
+    <h1 class="font-bold mb-6">Who can see your content?</h1>
+    <div class="cus-checkbox flex items-center gap-2 mb-4 cursor-pointer" data-checked="1">
+      <div class="bg-transparent border-2 border-white text-white rounded-sm">
+        <svg class="icon" style="width: 1em;height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;"
+          viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M384.119471 821.116243c-11.918447 0-23.837918-4.527107-32.936133-13.573133L77.629032 535.332405c-18.196431-18.107403-18.196431-47.456848 0-65.557088 18.196431-18.107403 47.674812-18.10024 65.871243-0.007163l240.619196 239.436254 495.173776-492.739331c18.196431-18.107403 47.674812-18.107403 65.871243 0 18.196431 18.10024 18.196431 47.449685 0 65.557088L417.055604 807.535947C407.956366 816.589137 396.037918 821.116243 384.119471 821.116243z">
+          </path>
+        </svg>
+      </div>
+      <span>Only me</span>
+    </div>
+    <div class="cus-checkbox flex items-center gap-2 text-[#707EAE] mb-4 cursor-pointer" data-checked="0">
+      <div class="bg-transparent border-2 border-[#707EAE] text-[#20183B] rounded-sm">
+        <svg class="icon" style="width: 1em;height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;"
+          viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M384.119471 821.116243c-11.918447 0-23.837918-4.527107-32.936133-13.573133L77.629032 535.332405c-18.196431-18.107403-18.196431-47.456848 0-65.557088 18.196431-18.107403 47.674812-18.10024 65.871243-0.007163l240.619196 239.436254 495.173776-492.739331c18.196431-18.107403 47.674812-18.107403 65.871243 0 18.196431 18.10024 18.196431 47.449685 0 65.557088L417.055604 807.535947C407.956366 816.589137 396.037918 821.116243 384.119471 821.116243z">
+          </path>
+        </svg>
+      </div>
+      <span>Everyone</span>
+    </div>
+    <div class="cus-checkbox flex items-center gap-2 text-[#707EAE] cursor-pointer" data-checked="0">
+      <div class="bg-transparent border-2 border-[#707EAE] text-[#20183B] rounded-sm">
+        <svg class="icon" style="width: 1em;height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;"
+          viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M384.119471 821.116243c-11.918447 0-23.837918-4.527107-32.936133-13.573133L77.629032 535.332405c-18.196431-18.107403-18.196431-47.456848 0-65.557088 18.196431-18.107403 47.674812-18.10024 65.871243-0.007163l240.619196 239.436254 495.173776-492.739331c18.196431-18.107403 47.674812-18.107403 65.871243 0 18.196431 18.10024 18.196431 47.449685 0 65.557088L417.055604 807.535947C407.956366 816.589137 396.037918 821.116243 384.119471 821.116243z">
+          </path>
+        </svg>
+      </div>
+      <span>Customize</span>
+    </div>
+  </section>
+  <section class="relative w-24 aspect-square bg-[#20183B] text-white rounded-full">
+    <svg class="icon absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+      style="width: 2em;height: 2em;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024"
+      xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M524.8 64c4.693 0 8.533 3.84 8.533 8.533v418.134h418.134c4.693 0 8.533 3.84 8.533 8.533v46.933a8.533 8.533 0 0 1-8.533 8.534H533.333V972.8a8.533 8.533 0 0 1-8.533 8.533h-46.933a8.533 8.533 0 0 1-8.534-8.533V554.667H51.2a8.533 8.533 0 0 1-8.533-8.534V499.2c0-4.693 3.84-8.533 8.533-8.533h418.133V72.533c0-4.693 3.84-8.533 8.534-8.533H524.8z">
+      </path>
+    </svg>
+  </section>
+  <section class="flex flex-col items-start gap-8 bg-[#20183B] text-white p-6 rounded-xl shadow-xl">
+    <button class="flex items-center gap-2 bg-[#FAB337] text-[#20183B] px-6 py-2 rounded-md">
+      <svg class="icon" style="width: 1em;height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;"
+        viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M524.8 64c4.693 0 8.533 3.84 8.533 8.533v418.134h418.134c4.693 0 8.533 3.84 8.533 8.533v46.933a8.533 8.533 0 0 1-8.533 8.534H533.333V972.8a8.533 8.533 0 0 1-8.533 8.533h-46.933a8.533 8.533 0 0 1-8.534-8.533V554.667H51.2a8.533 8.533 0 0 1-8.533-8.534V499.2c0-4.693 3.84-8.533 8.533-8.533h418.133V72.533c0-4.693 3.84-8.533 8.534-8.533H524.8z">
+        </path>
+      </svg>
+      <span>Add new</span>
+    </button>
+    <button class="flex items-center gap-2 text-[#7F8AC3]">
+      <svg class="icon" style="width: 1.5em;height: 1.5em;vertical-align: middle;fill: currentColor;overflow: hidden;"
+        viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M656 280h186.8a4 4 0 0 0 2.8-6.9L622.7 65.3a4 4 0 0 0-6.7 2.9V240a40 40 0 0 0 40 40z m188 56c-27.6 0.1-188 0-188 0a95.7 95.7 0 0 1-61.2-22.1 40.5 40.5 0 0 1-12.7-12.7A95.7 95.7 0 0 1 560 240s-0.1-145.8 0-172a4 4 0 0 0-4-4H216a40 40 0 0 0-40 40v816a40 40 0 0 0 40 40h592a40 40 0 0 0 40-40V340a4 4 0 0 0-4-4zM644.9 608.2l-39.6 39.6a3.9 3.9 0 0 1-5.6 0L544 592.1v228.6a4 4 0 0 1-4 4h-56a4 4 0 0 1-4-4V592.1l-55.7 55.7a3.9 3.9 0 0 1-5.6 0l-39.6-39.6a3.9 3.9 0 0 1 0-5.6l90.5-90.5 39.6-39.6a3.9 3.9 0 0 1 5.6 0l39.6 39.6 90.5 90.5a3.9 3.9 0 0 1 0 5.6z">
+        </path>
+      </svg>
+      <span>Upload Files</span>
+    </button>
+    <button class="flex items-center gap-2 text-[#7F8AC3]">
+      <svg class="icon" style="width: 1.5em;height: 1.5em;vertical-align: middle;fill: currentColor;overflow: hidden;"
+        viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M891.72 184.72H620.53c-27.44 0-54.28-7.94-77.3-22.87L428.15 87.21A156.614 156.614 0 0 0 342.93 62H132.28C93.46 62 62 93.46 62 132.28v759.44C62 930.53 93.46 962 132.28 962h759.44c38.81 0 70.28-31.47 70.28-70.28V255c0-38.81-31.47-70.28-70.28-70.28zM348.26 521.87l142.05-142.06c5.75-5.75 13.56-8.99 21.69-8.99s15.94 3.24 21.69 8.99l142.05 142.06c11.98 11.99 11.98 31.41 0 43.39-11.99 11.99-31.41 11.99-43.39 0l-89.67-89.68v274.77c0 16.94-13.74 30.68-30.68 30.68s-30.68-13.74-30.68-30.68V475.58l-89.67 89.68c-11.99 11.99-31.4 11.99-43.39 0-11.98-11.98-11.98-31.4 0-43.39z">
+        </path>
+      </svg>
+      <span>Upload Folder</span>
+    </button>
+    <button class="flex items-center gap-2 text-[#7F8AC3]">
+      <svg class="icon" style="width: 1.5em;height: 1.5em;vertical-align: middle;fill: currentColor;overflow: hidden;"
+        viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M853.333333 256h-341.333333l-85.333333-85.333333H170.666667c-47.36 0-84.906667 37.973333-84.906667 85.333333L85.333333 768c0 47.36 37.973333 85.333333 85.333334 85.333333h682.666666c47.36 0 85.333333-37.973333 85.333334-85.333333V341.333333c0-47.36-37.973333-85.333333-85.333334-85.333333z m-42.666666 341.333333h-128v128h-85.333334v-128h-128v-85.333333h128V384h85.333334v128h128v85.333333z">
+        </path>
+      </svg>
+      <span>New Folder</span>
+    </button>
+    <button class="flex items-center gap-2 text-[#7F8AC3]">
+      <svg class="icon" style="width: 1.5em;height: 1.5em;vertical-align: middle;fill: currentColor;overflow: hidden;"
+        viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M192 192h469.344V106.656H106.688v810.656h554.656v-85.344H192zM505.6 469.344l119.456-121.6L565.312 288l-224 224 224 224 59.744-59.744-119.456-121.6h411.744v-85.344z">
+        </path>
+      </svg>
+      <span>Import</span>
+    </button>
+  </section>
+</body>
+
+<script>
+  const cusCheckboxes = document.querySelectorAll(".cus-checkbox")
+  cusCheckboxes.forEach(checkbox => {
+    checkbox.addEventListener("click", () => {
+      if (checkbox.dataset.checked == "1") {
+        checkbox.dataset.checked = "0"
+        checkbox.classList.add("text-[#707EAE]")
+        checkbox.querySelector("div").classList.add("border-[#707EAE]", "text-[#20183B]")
+        checkbox.querySelector("div").classList.remove("border-white", "text-white")
+      } else {
+        checkbox.dataset.checked = "1"
+        checkbox.classList.remove("text-[#707EAE]")
+        checkbox.querySelector("div").classList.remove("border-[#707EAE]", "text-[#20183B]")
+        checkbox.querySelector("div").classList.add("border-white", "text-white")
+      }
+    })
+  })
+</script>
+
+</html>
